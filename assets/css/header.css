@@ -1,0 +1,137 @@
+/* .menu{
+	width: 100%;
+	background: #fff;
+	list-style: none;
+	display: flex;
+}
+
+.menu .menu-items{
+	width: 18%;
+}
+
+.menu .menu-items .menu-link{
+	color: #000;
+	text-decoration: none;
+	font-size: 16px;
+	text-align: center;
+
+	display: block;
+	padding: 20px 0px;
+}
+
+.active{
+	background: #0984CC;
+}
+
+.menu .menu-items .menu-link .tab-text{
+	margin-left: 8px;
+}
+@media screen and (max-width: 768px){
+	.menu .menu-items{
+		width: none;
+		flex-basis: 0;
+		flex-grow: 1;
+	}
+    .menu .menu-items .menu-link{
+		padding: 15px 0px;
+	}
+    .menu .menu-items .menu-link{
+		display: none;
+	}
+    .menu .menu-items .fa-solid{
+		display:flex;
+	}
+} */
+
+#nav-header{
+    display: flex;
+    position: fixed;
+    align-items: center;
+    padding-top: 15px;
+    justify-content: space-around;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    /* background-color: #fff; */
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', Helvetica, sans-serif;
+}
+/* clase para dejar el boton activo para cada clik */
+.active{
+    border-bottom: 3px solid #00A7EB;
+}
+.menu-header .menu .menu-items{
+    list-style: none;
+    margin-right: 40px;
+    font-size: 27px;
+}
+.menu-header .menu .menu-link{
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-family: 'Roboto', Helvetica, sans-serif;
+}
+.menu-header .menu .menu-link:hover{
+    color: #fff;
+    background-color: #1B2430;
+    padding: 4px;
+    border-radius: 5px 1px;
+    border-bottom: 5px solid #00A7EB;
+    transition: .3s;
+}
+.menu-header .menu .active:focus, .menu-header .menu .active:active{
+    border-bottom: 3px solid #00A7EB;
+}
+
+/* logo */
+.logo-congregacion .img-logo{
+    width: 100px;
+    height: 100px;
+    margin-right: 30px;
+}
+/* boton burger */
+.nav-burger {
+    color: #00A7EB;
+    background: none;
+    border: none;
+    font-size: 40px;
+    padding: 0 20px;
+    cursor: pointer;
+    display: none;
+  }
+  @media screen and (max-width:768px){
+    #nav-header{
+        display: flex;
+    }
+    .nav-burger{
+        display:block;
+    }
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        background-color: #00A7EB;
+        position: fixed;
+        width: 100%;
+        margin-top:30px;
+        padding: 20px 0;
+        padding: 50px 0px;
+        overflow-y: auto;
+        left: 100%;
+        transition: .3s;
+    }
+    .menu-header .menu .menu-link{
+        color: #fff;
+        font-size: 50px;
+    }
+    /* clase de menu visible con funcion de JS */
+    .menu_visible {
+        left: 0;
+        margin-top: 30px;
+      }
+    .nav-burger:focus:not(:focus-visible) {
+        outline: none;
+      }
+  }
