@@ -1,24 +1,267 @@
 *{
 	margin: 0;
 	padding: 0;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
+	/* border: solid 1px red; */
 	box-sizing: border-box;
 }
 .wrap{
 	width: 100%;
 }
 
-#secciones section p{
-	text-align: justify;
-	padding: 50px;
-}
 .contenido2{
-	margin-top: 200px;
+	margin-top: 236px;
 }
+.carousel-item img{
+	width: 100%;
+	height: 750px;
+	object-fit: fill;
+}
+
 @media screen and (max-width: 768px) {
 	.contenido2 {
 		margin-top: 150px;
 	}
+	.carousel-item img{
+		height:auto;
+	}
 }
-
+@media screen and (min-width: 1300px) {
+	.carousel-item img{
+		height: 600px;
+		object-fit: cover;
+	}
+}
+/* donacion */
+/* .donacion{
+	display: flex;
+	justify-content: center;
+	margin-top: 100px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 80px;
+}
+.donacion .img-donar img{
+	width: 548px;
+	height: 358px;
+	border-radius: 5px;
+	margin-right: 33px; 
+}
+.donacion .btn-donar{
+	display:block;
+	text-align: center;
+	font-family: 'Roboto', Helvetica, sans-serif;
+}
+.donacion .btn-donar .text-ayuda{
+	padding-right: 20px;
+	padding-left: 20px;
+}
+.donacion .btn-donar .boton-donacion button{
+	font-style: none;
+	color: #000;
+	background-color: #00A7EB;
+	border: none;
+	padding: 14px 123px;
+	border-radius: 8px;
+	margin-top: 40px;
+	font-weight: bold;
+    font-size: 20px;
+}
+.donacion > .btn-donar > .boton-donacion #donar{
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	margin-top: 10px;
+}
+.donacion > .btn-donar > .boton-donacion #donar h3{
+	margin-right: 10px;
+	justify-items: center;
+	font-size: 30px;
+	margin-bottom: 0;
+	font-family: 'Roboto', Helvetica, sans-serif;
+}
+.donacion > .btn-donar > .boton-donacion #donar input{
+	border-radius: 20px;
+	width: 210px;
+	height: 40px;
+	padding-left: 12px;
+	border: 2px solid #000;
+}
+.donacion > .btn-donar .metodo-pago img{
+	mix-blend-mode: normal;
+	margin-top: 40px;
+	width: 240px;
+	height: 120px;
+}
+@media screen and (max-width: 920px) {
+	.donacion{
+		display: block;
+		text-align: center;
+	}
+	.donacion .img-donar img {
+		justify-content: center;
+		max-width:100%;
+		height: auto;
+		margin-right: 0px;
+		object-fit: cover;
+	}
+	.donacion .btn-donar .text-h3{
+		padding: 0 90px;
+		margin-top: 20px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.donacion .btn-donar .text-h3{
+		padding: 0 10px;
+		margin-top: 20px;
+	}
+	.donacion .btn-donar .boton-donacion button{
+		max-width: 100%;
+		padding: 14px 70px;
+	}
+	.donacion > .btn-donar > .boton-donacion #donar input {
+		width: 200px;
+		height: 50px;
+	}
+	.donacion > .btn-donar .metodo-pago img {
+		width: 200px;
+		height: 110px;
+	}
+} */
+.donacion{
+	display: flex;
+	width: 100%;
+	padding: 126px 25px;
+	font-family: "Roboto", Helvetica, sans-serif;
+}
+.donacion .block-plan-padrino{
+	display: block;
+	padding-right: 48px;
+}
+.donacion .block-plan-padrino .boton-donacion{
+	display: flex;
+	margin-top: 80px;
+}
+/* img donacion */
+.donacion .img-donar img{
+	width: 534px;
+	height: 497px;
+}
+.donacion .title-plan-padrino .text-padrino{
+	font-size: 36px;
+	font-weight: 500;
+}
+.donacion hr{
+	border: solid 3px #0F85B5;
+	margin-bottom: 24px;
+}
+.donacion .title-plan-padrino p{
+	font-size: 20px;
+	font-weight: 400;
+	text-align: justify;
+}
+.donacion .boton-donacion{
+	margin-top: 20px;
+}
+.donacion .boton-donacion .form-contact .form-lista{
+	padding-right: 70px;
+	font-size: 20px;
+	font-weight: 400;
+	font-family: "Roboto", Helvetica, sans-serif;
+}
+.donacion .boton-donacion .form-contact{
+	text-align: center;
+}
+.donacion .boton-donacion .form-contact .boton-form button{
+	border: none;
+	background-color: #0F85B5;
+	color: #fff;
+	font-size: 20px;
+	padding: 15px;
+	border-radius: 8px;
+}
+.donacion .block-plan-padrino .boton-donacion .davivienda{
+	padding-left: 10px;
+	text-align: center;
+}
+.donacion .boton-donacion .davivienda .p-textdonacion{
+	font-size: 20px;
+	font-weight: 400;
+	margin-bottom: 46px;
+	word-wrap: break-word;
+	font-family: "Roboto", Helvetica, sans-serif;
+}
+/* numero de cuenta */
+.donacion .boton-donacion .davivienda .numero-cuenta{
+	font-size: 20px;
+	font-weight:400;
+	margin: 0;
+	font-family: "Roboto", Helvetica, sans-serif;
+}
+.donacion .boton-donacion .davivienda .img-btn-transferir{
+	padding: 0px 60px;
+	border: none;
+	border-radius: 8px;
+	background-color: #FF0000;
+}
+.donacion .boton-donacion .davivienda .img-btn-transferir img{
+	margin: -15px 0px;
+	width: 140px;
+	height: 130px;
+	transform: scale(1.5);
+}
+@media screen and (max-width: 1400px) {
+	.donacion .block-plan-padrino .boton-donacion{
+		display: block;
+	}
+	.donacion .block-plan-padrino .boton-donacion .davivienda{
+		padding: 0;
+		margin-top: 40px;
+	}
+	.donacion .boton-donacion .davivienda .img-btn-transferir img {
+		margin: -15px 0px;
+		width: 100px;
+		height: 90px;
+		transform: scale(1.3);
+	}
+	.donacion .boton-donacion .davivienda .p-textdonacion {
+		margin-bottom: 10px;
+	}
+}
+@media screen and (max-width:900px) {
+	.donacion {
+		width: 100%;
+		padding: 40px 25px;
+	}
+	.donacion .block-plan-padrino .boton-donacion .davivienda{
+		margin-top: 20px;
+	}
+	.donacion .block-plan-padrino {
+		padding-right: 0;
+	}
+.donacion .img-donar img{
+	display: none;
+	}
+.donacion .boton-donacion .form-contact .form-lista {
+		list-style: none;
+		padding: 0;
+	}
+}
+@media screen and (max-width:768px) {
+	.donacion .boton-donacion .davivienda .img-btn-transferir img {
+		width: 100px;
+		height: 90px;
+		transform: scale(1.3);
+	}
+	.donacion .boton-donacion .davivienda .img-btn-transferir {
+		padding: 0px 35px;
+	}
+}
+@media screen and (max-width: 370px) {
+.donacion .block-plan-padrino {
+	display: block;
+	margin-right: 0;
+	}
+.donacion .boton-donacion .davivienda p {
+	padding: 0;
+	}
+}

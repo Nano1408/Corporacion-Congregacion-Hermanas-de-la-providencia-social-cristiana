@@ -1,10 +1,10 @@
 $(document).ready(function(){
-	$('ul.menu li a:first').addClass('active');
+	$('.menu .menu-items a:first').addClass('active');
 	$('#secciones section').hide();
 	$('#secciones section:first').show();
 
-	$('ul.menu li a').click(function(){
-		$('ul.menu li a').removeClass('active');
+	$('ul.menu .menu-items a').click(function(){
+		$('ul.menu .menu-items a').removeClass('active');
 		$(this).addClass('active');
 		$('#secciones section').hide();
 

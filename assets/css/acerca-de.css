@@ -1,0 +1,173 @@
+.title-nosotros{
+    background-color:#0F85B5;
+    width:100%;
+    min-height:255px;
+    padding-left: 109px;
+    word-wrap: break-word;
+    color: #fff;
+}
+.title-nosotros h4{
+    line-height:127.5px;
+    margin-bottom: -30px;
+    font-size: 40px;
+    font-weight: 300;
+    font-family: "Roboto", Helvetica, sans-serif;
+}
+.title-nosotros h2{
+    font-size: 64px;
+    font-weight: 500;
+    font-family: "Roboto", Helvetica, sans-serif;
+}
+/* subtitulos y parrafos descriptivos */
+.h2-subtitulo2{
+    margin-top: 30px !important;
+}
+.parrafos{
+    text-align: justify;
+    margin: 57px 140px 61px 140px;
+}
+.parrafos .text-descriptivo .h2-descripcion{
+    font-size: 36px;
+    padding-bottom: 10px;
+    font-weight: 600;
+    font-family: "Roboto", Helvetica, sans-serif;
+}
+.parrafos .text-descriptivo .p-descriptivo{
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+/* interpretacion */
+.interpretacion{
+    margin-top: 60px;
+    font-family: "Roboto", Helvetica, sans-serif;
+}
+.interpretacion h2{
+    font-size: 36px;
+    font-weight: 600;
+}
+.interpretacion .text-interpretativo{
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-family: "Roboto", Helvetica, sans-serif;
+}
+/* logo principal */
+.logo-principal{
+    width: 100%;
+    margin-top: 67px;
+    margin-bottom: 76px;
+    text-align: center;
+}
+.logo-principal .principal{
+    width: 570px;
+    height: 574px;
+}
+/* eslogan del escudo */
+.logo-verde-blanco{
+    width: 100%;
+    text-align: center;
+}
+.logo-verde-blanco .eslogan{
+    width: 570px;
+    height: 430px;
+}
+/* nuestra fundadora */
+.titlle-fundadora{
+    background-color:#0F85B5;
+    width:100%;
+    min-height:250px;
+    padding-left: 109px;
+    word-wrap: break-word;
+    color: #fff;
+}
+.titlle-fundadora h4{
+    line-height:125px;
+    margin-bottom: -30px;
+    font-size: xx-large;
+    opacity: 0.7;
+    font-weight: 300;
+    font-family: "Roboto", Helvetica, sans-serif;
+}
+.titlle-fundadora h2{
+    font-size: xxx-large;
+    font-weight: 500;
+    font-family: "Roboto", Helvetica, sans-serif;
+}
+/* divina providencia */
+.divina-providencia{
+    display: flex;
+    text-align: justify;
+    margin: 71px 20px 61px 50px;
+    word-wrap: break-word;
+}
+.divina-providencia h2{
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 32px;
+    font-family: "Roboto", Helvetica, sans-serif;
+    color: #0F85B5;
+}
+.divina-providencia p{
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Roboto", Helvetica, sans-serif;
+}
+/* imagen de la hermana Maria providencia */
+.divina-providencia .img-madre-maria img{
+    margin-left: 100px;
+    width: 411px;
+    height: 569px;
+    border-radius: 5px;
+}
+@media screen and (max-width: 900px) {
+    .divina-providencia{
+        margin: 71px 30px 61px 30px;
+    }
+    .parrafos {
+        text-align: justify;
+        margin: 57px 40px 61px 40px;
+    }
+    .logo-verde-blanco .eslogan {
+        width: 100%;
+        height: auto;
+    }
+    .logo-principal .principal {
+        width: 100%;
+        height: auto;
+    }
+    .divina-providencia .img-madre-maria img{
+        width: 300px;
+        height: 400px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .divina-providencia{
+        display: block;
+    }
+    .title-nosotros {
+        min-height: 180px;
+        text-align: center;
+        padding-left: 0px;
+    }
+    .titlle-fundadora{
+        text-align: center;
+        padding: 0 10px;
+    }
+    .title-nosotros h2 {
+        font-size: 44px;
+    }
+    .title-nosotros h4 {
+        line-height: 127.5px;
+        font-size: 30px;
+    }
+    .divina-providencia .img-madre-maria{
+        width: 100%;
+        text-align: center;
+    }
+    .divina-providencia .img-madre-maria img{
+        max-width: 100%;
+        height: auto;
+        margin-left: 0px;
+    }
+}

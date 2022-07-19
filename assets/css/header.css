@@ -1,58 +1,14 @@
-/* .menu{
-	width: 100%;
-	background: #fff;
-	list-style: none;
-	display: flex;
-}
-
-.menu .menu-items{
-	width: 18%;
-}
-
-.menu .menu-items .menu-link{
-	color: #000;
-	text-decoration: none;
-	font-size: 16px;
-	text-align: center;
-
-	display: block;
-	padding: 20px 0px;
-}
-
-.active{
-	background: #0984CC;
-}
-
-.menu .menu-items .menu-link .tab-text{
-	margin-left: 8px;
-}
-@media screen and (max-width: 768px){
-	.menu .menu-items{
-		width: none;
-		flex-basis: 0;
-		flex-grow: 1;
-	}
-    .menu .menu-items .menu-link{
-		padding: 15px 0px;
-	}
-    .menu .menu-items .menu-link{
-		display: none;
-	}
-    .menu .menu-items .fa-solid{
-		display:flex;
-	}
-} */
-
 #nav-header{
-    display: flex;
+    display: block;
     position: fixed;
     align-items: center;
     padding-top: 15px;
-    justify-content: space-around;
+    padding-bottom: 15px;
+    justify-content: center;
     width: 100%;
     z-index: 1;
     top: 0;
-    /* background-color: #fff; */
+    background-color: #fff;
 }
 .menu{
     display: flex;
@@ -75,12 +31,9 @@
     font-family: 'Roboto', Helvetica, sans-serif;
 }
 .menu-header .menu .menu-link:hover{
-    color: #fff;
-    background-color: #1B2430;
-    padding: 4px;
-    border-radius: 5px 1px;
-    border-bottom: 5px solid #00A7EB;
-    transition: .3s;
+    border-bottom: 3px solid #00A7EB;
+    transition: all .2s ease-in-out;
+    transform: scale(1.2);
 }
 .menu-header .menu .active:focus, .menu-header .menu .active:active{
     border-bottom: 3px solid #00A7EB;
@@ -90,7 +43,21 @@
 .logo-congregacion .img-logo{
     width: 100px;
     height: 100px;
-    margin-right: 30px;
+}
+#nav-header .logo-congregacion{
+    /* width: 100%; */
+    text-align: center;
+}
+#nav-header .title-hermanas{
+    width: 100%;
+    text-align: center;
+}
+#nav-header .title-hermanas h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Roboto', Helvetica, sans-serif;
 }
 /* boton burger */
 .nav-burger {
@@ -102,9 +69,10 @@
     cursor: pointer;
     display: none;
   }
-  @media screen and (max-width:768px){
+  @media screen and (max-width:900px){
     #nav-header{
         display: flex;
+        justify-content: space-around;
     }
     .nav-burger{
         display:block;
@@ -134,4 +102,7 @@
     .nav-burger:focus:not(:focus-visible) {
         outline: none;
       }
+      #nav-header .title-hermanas{
+        display: none;
+    }
   }

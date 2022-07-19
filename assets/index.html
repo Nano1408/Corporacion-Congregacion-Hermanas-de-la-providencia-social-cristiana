@@ -3,14 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>Navegacion con tabs</title>
+	<title>Hermanas | dominicanas de la providencia social cristiana</title>
+	<!-- icono de la pestaña -->
+	<link rel="shortcut icon" href="./icons/logo 890906439 - Casadel Peregrino.png" type="image/x-icon">
+
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="icon" type="image/x-icon" href="./imagenes/logo 890906439 - Casadel Peregrino.png">
 
 	<link rel="stylesheet" href="/assets/css/main.css">
 	<link rel="stylesheet" href="./css/header.css">
-	<!-- <link rel="stylesheet" href="/assets/css/font-awesome.css"> -->
 	<link rel="stylesheet" href="/assets/css/footer.css">
+	<link rel="stylesheet" href="./css/acerca-de.css">
 
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
@@ -20,6 +23,9 @@
 			<nav id="nav-header">
 				<div class="logo-congregacion">
 					<img src="/assets/icons/logo 890906439 - Casadel Peregrino.png" alt="Logo-Congregacion-Hermanas-de-la-provincia" class="img-logo">
+				</div>
+				<div class="title-hermanas">
+					<h1>Hermanas dominicanas de la providencia social cristiana</h1>
 				</div>
 				<div class="menu-header">
 				   <button class="nav-burger" aria-label="Abrir menú"><i class="fas fa-bars"></i></button>
@@ -34,7 +40,7 @@
 			  </nav>
 		</header>
 		<!-- termina header -->
-		<!-- inicia el main -->
+		<!-- inicia el main ************************************************************* -->
 		<main id="secciones">
 			<section id="tab1" class="contenido contenido2">
 					<!-- Inicia slider -->
@@ -43,19 +49,23 @@
 				   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
 				   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
 				   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+				   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
 				 </div>
 				 <div class="carousel-inner">
 				   <div class="carousel-item active">
-				 	<img src="./img/people-taking-care-together-of-donations.jpg" class="d-block w-100" alt="slide1">
-				   </div>
-				   <div class="carousel-item">
+				 	  <img src="./img/people-taking-care-together-of-donations.jpg" class="d-block w-100" alt="slide1">
+				     </div>
+				     <div class="carousel-item">
 					 <img src="./img/inside-view-of-church-with-religious-icons-on-the-windows-and-stone-arches.jpg" class="d-block w-100" alt="slide2">
-				   </div>
-				   <div class="carousel-item">
-					<img src="./img/religious-woman-praying-with-rosary-beads.jpg" class="d-block w-100" alt="slide3">
-				   </div>
-				 </div>
-			 	<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+				     </div>
+				     <div class="carousel-item">
+					  <img src="./img/religious-woman-praying-with-rosary-beads.jpg" class="d-block w-100" alt="slide3">
+				     </div>
+				     <div class="carousel-item">
+					  <img src="./img/hermanas-de-la-providencia-cristiana.png" class="d-block w-100" alt="slide4">
+				     </div>
+				    </div>
+			 	 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
 				   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
 				   <span class="visually-hidden">Previous</span>
 				 </button>
@@ -65,10 +75,116 @@
 				 </button>
 			   </div>
 			  <!-- Termina slider -->
+			  <!-- SECCION DE DONACION -->
+			    <div class="donacion">
+					<div class="block-plan-padrino">
+					     <div class="title-plan-padrino">
+					        <h3 class="text-padrino">
+						     <b>Plan</b> padrino
+					        </h3>
+							<hr>
+							<p>Únete al PLAN PADRINO, los niños y niñas beneficiados con este plan, serán su gran recompensa.
+								<b>El Plan Padrino</b>, nos ofrece un medio con el cual podemos ayudar a muchas personas no solo apoya a niños y niñas, sino que tu apoyo es una herramienta que transforma a una comunidad que siembra esperanza, para un mejor futuro. Tenemos una población con grandes necesidades y ustedes aportar un granito de arena, que para nosotros será una <b>gran ayuda</b>.
+							</p>
+						 </div>
+						 <!-- botones de donacion -->
+						 <div class="boton-donacion">
+							<div class="form-contact">
+								<ul class="form-lista">
+									<li class="items-form">útiles escolare</li>
+									<li class="items-form">Ropa y Calzado</li>
+									<li class="items-form">artículos de aseo</li>
+									<li class="items-form">Día de descanso para los niños</li>
+								</ul>
+								<div class="boton-form">
+									<button>Formulario de Contacto</button>
+								</div>
+							</div>
+							<!-- boton davivienda -->
+							<div class="davivienda">
+								<p class="p-textdonacion">puede realizar tus aportes economicos voluntarios por davivienda o transferencia desde otro banco.</p>
+								<button class="img-btn-transferir">
+									<img src="./icons/icon-davivienda.png" alt="icons-davivienda">
+								</button>
+								<p class="numero-cuenta">N° Cuenta: 0002 945 182 53</p>
+								<p class="numero-cuenta">Tipo cuenta: Ahorro</p>
+							</div>
+						 </div>
+						</div>
+						 <div class="img-donar">
+							<img src="./img/ninos-donacion-unidos.jpeg" alt="niños-donacion-unidos">
+						</div>
+			    </div>
 			</section>
+<!-- ******************************************************************************************************* *************-->
 			<section id="tab2" class="contenido contenido2">
-				<h1>Nosotros</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel voluptates unde, consequuntur aliquid architecto rem numquam expedita minima dolorem pariatur recusandae, eius quod quia aspernatur id impedit, tenetur! Aspernatur incidunt molestiae dolores animi ea praesentium ipsam tenetur voluptas cupiditate perspiciatis eum nihil, natus exercitationem libero earum fuga dignissimos impedit numquam, quasi, placeat officiis voluptates, ad reprehenderit fugiat? Fugiat aperiam et magni, molestiae, numquam consectetur vitae sapiente cupiditate totam laboriosam voluptate obcaecati, aliquam placeat? Suscipit dolores fuga laudantium sed, qui magni iusto dolore quia. Quis fugit exercitationem porro. Rerum nihil omnis recusandae ratione fuga alias eligendi, earum sunt veritatis praesentium eum perspiciatis. Molestias deserunt, iure neque animi quod! Impedit reprehenderit cumque, numquam velit quae cum eius quidem similique laudantium hic deleniti!</p>
+				<div class="title-nosotros"> 
+						<h4>sobre nosotros</h4>
+					<h2>CONOCE NUESTRA HISTORIA</h2>
+				</div>
+				<!-- parrafo sobre nosotros -->
+				<div class="parrafos">
+					<div class="text-descriptivo">
+						<h2 class="h2-descripcion">Descripción Heráldica</h2>
+						<p class="p-descriptivo">Sobre campo circular una cruz flordelisada en plata y sable con medallón central circular cortado de azur y sinople, una estrella de ocho puntas en oro.
+						   Lleva por timbre una diadema real con cinco piedras de rubí y cinco puntas, cimada de cruz en oro. Por divisa una orla semicircular de plata que ostenta en sable el nombre de la Congregación Hermanas Dominicas de la Providencia Social Cristiana.
+						</p>
+					</div>
+					<div class="text-descriptivo">
+						<h2 class="h2-descripcion h2-subtitulo2">Descripción Simbólica</h2>
+						<p class="p-descriptivo">Los esmaltes de plata y sable de la cruz flordelisada hacen honor a la Familia Dominicana, fundada por Santo Domingo de Guzmán, cuya Cruz de Calatrava fue tomada de la Orden religioso-militar de Calatrava, fundada por san Raimundo, abad de Fitero, en 1158, a la cual pertenecía Don Félix de Guzmán, padre de santo Domingo. Los caballeros de Calatrava llevaban en su capa un escudo con estas características en esmalte de gules. Los colores de sable y plata hacen mención del carisma dominicano “Contemplari et contemplata aliis tradere” (contemplar y llevar a los demás lo contemplado), ya que su esmalte de sable (negro) que absorbe la luz y el color es el símbolo por excelencia de la contemplación y el plata (blanco) la refleja cual símbolo de la predicación.
+						</p>
+						<p class="p-descriptivo">La estrella de oro representa la luz de la Providencia Divina, contemplada en Belén, seguida por los Magos de Oriente; estrella que hace honor a su vez a los orígenes dominicanos cual emblema tradicional sobre la frente de santo Domingo de Guzmán reconocido como “luz de la Iglesia y Doctor de la verdad”, emblema por título y simbolismo de la villa natal de la Madre Josefina y de nuestra Congregación: La Estrella (Antioquia).
+						</p>
+						<p class="p-descriptivo">La diadema Real hace honor a la Reina Madre y Patrona de Colombia, Nuestra Señora del rosario de Chiquinquirá, desde cuyo santuario de La Estrella ha brindado constante cobijo y protección a nuestra Congregación.
+						</p>
+						<p class="p-descriptivo">Los colores azul, blanco y verde, tomados de la bandera del Municipio de la Estrella, lugar donde fuera fundada la Congregación Hermanas Dominicas de la Doctrina Social Cristiana el 29 de febrero de 1968.
+						</p>
+					</div>
+					<div class="logo-verde-blanco">
+						<img class="eslogan" src="./img/logo-color-blanco-verde.png" alt="eslogan-escudo-verde-blanco">
+					</div>
+					<div class="interpretacion">
+						<h2>interpretación</h2>
+						<p class="text-interpretativo">Nacidas gracias a la infinita bondad misericordiosa de la Providencia Divina: “Qué bondad la tuya Señor”, y afianzadas en nuestra vida misión por el carisma y el ideal dominicanos, hemos reconocido siempre La Estrella como lugar de nuestro nacimiento Antioqueño, la Estrella de Belén como guía y meta de nuestra consagración religiosa, hemos reconocido y seguido la estrella en la frente de nuestro padre Domingo y somos conscientes de nuestra misión en la Iglesia y en la Familia Dominicana como testigos de la luz y la Palabra.
+						</p>
+						<p class="text-interpretativo">Con nuestra fundadora, madre María Josefina, nos identificamos plenamente con la Eucaristía y la adoración a Jesús Sacramentado: puesto que estamos convencidas que no hay consuelo más reconfortante que “pasar las horas de angustia al pie del sagrario “y que verdaderamente “al pie del sagrario el alma encuentra la dulce paz que el mundo no le da todo el dolor la tristeza y la amargura en dulzura se convierte allí”. El Sagrario era para nuestra Madre su mayor atracción: hoy simbolizado en la cruz cimera que corona nuestro emblema y en las cinco piedras preciosas de rubí, es un homenaje a su divino amor misericordioso, para que “Reine Cristo en los corazones de los hombres y los pueblos gocen de paz”. 
+						</p>
+						<p class="text-interpretativo">Haber nacido al amparo y cobijo de Nuestra Señora del Rosario de Chiquinquirá al pié de su santuario en La Estrella es un compromiso filial que nos lleva diariamente a estar comprometidas con nuestro testimonio de mujeres consagradas al servicio de la Iglesia y de de nuestros hermanos; por ello corona nuestro emblema la diadema real de nuestra Reina y Patrona de Colombia. En la Estrella Nació el 5 de abril de 1907 en la Estrella y Murió el 24 de enero de 2001 en La Estrella nació nuestra Madre Fundadora el 5 de abril de 1907, allí mismo murió el 24 de enero de 2001, allí nació también nuestra Congregación el 29 de febrero de 1968.
+						</p>
+						<p class="text-interpretativo">Los colores azul y blanco, símbolos de nuestra patria chica, colores que simbolizan el cielo y la tierra unidos por la estrella de la Providencia Divina al servicio de todos nuestros hermanos menos favorecidos. Estos dos colores de la Bandera de la Estrella hacen también homenaje a nuestros cofundadores: el Excelentísimo Señor Jesús María Urrea Sánchez y el Reverendo Padre Ricardo Mejía Vásquez a quienes reconocemos como primeros guías y forjadores de nuestra Congregación quienes con Madre Josefina nos enseñaron los primeros pasos del verdadero abandono total en la Providencia divina: “Las manos de Padre Dios están llenas abramos las nuestras y repartamos a los pobres para que él las vuelva a llenar… Todas los abras son donadas por la Divina Providencia a través de los benefactores”.
+						</p>
+						<p class="text-interpretativo">La divisa que orla nuestro emblema con el nombre de nuestra congregación hace una hermosa abstracción semicircular del globo terráqueo, recordándonos a cada instante el carisma universal de nuestra comunidad: la mística por los pobres con énfasis en la niñez pobre, los huérfanos, maltratos, la niñez violada en sus derechos que originó la fundación de esta institución ante la miseria de tantos pueblos y caseríos, contemplada en las ciudades de Barranquilla, Santa Marta y Cartagena, donde nuestra madre fundadora conoció la necesidad de tantos pobres, en sus años que estuvo como directora de Colegios.	
+						</p>
+					</div>
+					<div class="logo-principal">
+						<img class="principal" src="./icons/logo 890906439 - Casadel Peregrino.png" alt="eslogan-escudo-verde-blanco">
+					</div>
+				  </div>
+				    <div class="titlle-fundadora">
+					  <h4>Nuenstra Fundadora</h4>
+					  <h2>MADRE MARÍA JOSEFINA GARCES</h2>
+					  <h2>BAENA FUNDADORA</h2>
+				    </div>
+					<div class="divina-providencia">
+						<div class="madre-maria">
+						<h2>"Toda una vida al servicio de la divina providencia"</h2>
+						<p><b>Madre María Josefina Garcés Baena</b>, nació en el Municipio de la Estrella, en el año de 1907, en el lugar que tristemente llamamos “Los Chalet” la primera de sus 11 hermanos, familia de reconocida piedad.
+							Sus abuelos maternos y paternos vivían en lo que hoy es la casa cural y la casa de la Hermanas Mayores de la Providencia Social Cristiana, a lado y lado de la Basílica de Nuestra Señora del Rosario de Chiquinquirá de la Estrella.
+						</p>
+						<p><b>“La Masita Mejía”</b> como la llamaban y otros que enuncio como breve genealogía: Joaquín Garcés Mejía.     
+							Rosana Baena Escobar, José María Garcés Gutiérrez, Etelvina Mejía Palacio, Luís María Baena, Leonor Escobar, Joaquín Garcés, Rita Gutiérrez, José Antonio Mejía, Quiteria Palacio, Manuel Baena, Dominga Montoya, Rafael Escobar, Ángela María Montoya
+						</p>
+						<p>De los 11 tres se consagraron al Señor como religiosas: Madre Josefina (Adelita como cariñosamente le llamaban) y lucía en las Hermanas Dominicas de la Presentación y Gabriela Hermanita de los pobres en Lila Francia.
+						</p>
+						<p>Envía hermanas a las catequesis parroquiales y es celosa porque los niños y las niñas protegidos reciban diariamente la instrucción y se les haga el minuto de Dios en la noche. Solía decir: <b>“Todo es Bondad de Dios, la Bondad de Dios no se agota. Las manos de Padre Dios están siempre abiertas para dar, estemos nosotras prestas a recibir y demos para que el Padre Dios continúe prodigando su Bondad”.</b>
+						</p>
+					</div>
+					<div class="img-madre-maria">
+						<img src="./img/madre-maria-fundadora.png" alt="Madre-Maria-Fundadora">
+					</div>
+					</div>
+				<!-- termina parrafo nosotros -->
 			</section>
 			<section id="tab3" class="contenido contenido2">
 				<h1>Servicios</h1>
@@ -86,7 +202,7 @@
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam ipsa ducimus amet at cumque sed numquam, explicabo impedit optio quas iste aperiam quidem ipsam rerum libero voluptatibus perferendis officiis voluptatum!</p>
 			</section>
 		</main>
-		<!-- inicia el main -->
+		<!-- termina el main **************************************************************************-->
 		<footer id="content-foorter">
 			<div class="footer">
 				<!-- siguenos -->
