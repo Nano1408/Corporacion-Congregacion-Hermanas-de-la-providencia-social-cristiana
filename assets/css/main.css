@@ -283,7 +283,9 @@
 		margin-right: 0px;
 		object-fit: cover;
 	}
-	
+	.presencia-misionera {
+		padding-bottom: 15px;
+	}
 	.noticias .video-papa {
 		justify-content: center;
 		max-width:100%;
