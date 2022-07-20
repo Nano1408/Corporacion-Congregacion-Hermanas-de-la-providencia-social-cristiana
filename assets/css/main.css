@@ -1,7 +1,6 @@
 *{
 	margin: 0;
 	padding: 0;
-	/* border: solid 1px red; */
 	box-sizing: border-box;
 }
 .wrap{
@@ -31,102 +30,7 @@
 		object-fit: cover;
 	}
 }
-/* donacion */
-/* .donacion{
-	display: flex;
-	justify-content: center;
-	margin-top: 100px;
-	margin-left: 20px;
-	margin-right: 20px;
-	margin-bottom: 80px;
-}
-.donacion .img-donar img{
-	width: 548px;
-	height: 358px;
-	border-radius: 5px;
-	margin-right: 33px; 
-}
-.donacion .btn-donar{
-	display:block;
-	text-align: center;
-	font-family: 'Roboto', Helvetica, sans-serif;
-}
-.donacion .btn-donar .text-ayuda{
-	padding-right: 20px;
-	padding-left: 20px;
-}
-.donacion .btn-donar .boton-donacion button{
-	font-style: none;
-	color: #000;
-	background-color: #00A7EB;
-	border: none;
-	padding: 14px 123px;
-	border-radius: 8px;
-	margin-top: 40px;
-	font-weight: bold;
-    font-size: 20px;
-}
-.donacion > .btn-donar > .boton-donacion #donar{
-	display: flex;
-	justify-content: center;
-	align-items: flex-end;
-	margin-top: 10px;
-}
-.donacion > .btn-donar > .boton-donacion #donar h3{
-	margin-right: 10px;
-	justify-items: center;
-	font-size: 30px;
-	margin-bottom: 0;
-	font-family: 'Roboto', Helvetica, sans-serif;
-}
-.donacion > .btn-donar > .boton-donacion #donar input{
-	border-radius: 20px;
-	width: 210px;
-	height: 40px;
-	padding-left: 12px;
-	border: 2px solid #000;
-}
-.donacion > .btn-donar .metodo-pago img{
-	mix-blend-mode: normal;
-	margin-top: 40px;
-	width: 240px;
-	height: 120px;
-}
-@media screen and (max-width: 920px) {
-	.donacion{
-		display: block;
-		text-align: center;
-	}
-	.donacion .img-donar img {
-		justify-content: center;
-		max-width:100%;
-		height: auto;
-		margin-right: 0px;
-		object-fit: cover;
-	}
-	.donacion .btn-donar .text-h3{
-		padding: 0 90px;
-		margin-top: 20px;
-	}
-}
-@media screen and (max-width: 768px) {
-	.donacion .btn-donar .text-h3{
-		padding: 0 10px;
-		margin-top: 20px;
-	}
-	.donacion .btn-donar .boton-donacion button{
-		max-width: 100%;
-		padding: 14px 70px;
-	}
-	.donacion > .btn-donar > .boton-donacion #donar input {
-		width: 200px;
-		height: 50px;
-	}
-	.donacion > .btn-donar .metodo-pago img {
-		width: 200px;
-		height: 110px;
-	}
-} */
+
 .donacion{
 	display: flex;
 	width: 100%;
@@ -264,4 +168,95 @@
 .donacion .boton-donacion .davivienda p {
 	padding: 0;
 	}
+}
+
+/* noticias */
+.frase {
+	text-align: center;
+	margin-top: 60px;
+}
+
+.text-presenciamisionera {
+	border-bottom: 3px solid #0F85B5 ;
+	font-size: 40px;
+}
+
+.fraseazul {
+	color: #0F85B5;
+}
+
+.noticias .summary {
+	list-style: none;
+}
+
+.noticias .summary .flecha {
+	width: 15px;
+	height: 15px;
+}
+
+.noticias {
+	display: flex;
+	margin: 50px;
+	
+}
+
+.noticias .img-formacion {
+	border-radius: 5px !important;
+}
+
+.noticias .img-noticias {
+	width: 700px;
+	height: 420px;
+	border-radius: 5px;
+	margin-right: 33px;
+}
+
+.presencia-misionera {
+	padding-bottom: 100px;
+}
+
+.noticias .video-papa {
+	padding-left: 30px;
+}
+
+.noticias .formacion {
+	background-color: #0F85B5 !important;
+}
+
+.noticias  .titulo-formacion {
+	border-bottom: 3px solid black ;
+	font-size: 40px;
+}
+
+.noticias .frase-formacion {
+	color: #0F85B5;
+
+}
+
+.noticias .text-formacion  {
+	margin-left: 30px;
+}
+
+@media screen and (max-width: 920px) {
+	.noticias{
+		display: block;
+		text-align: center;
+	}
+	.noticias .img-noticias {
+		justify-content: center;
+		max-width:100%;
+		height: auto;
+		margin-right: 0px;
+		object-fit: cover;
+	}
+	
+	.noticias .video-papa {
+		justify-content: center;
+		max-width:100%;
+		height: auto;
+		margin-right: 0px;
+		object-fit: cover;
+	}
+	
+	
 }
