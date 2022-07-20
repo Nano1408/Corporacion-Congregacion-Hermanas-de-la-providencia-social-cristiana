@@ -117,6 +117,9 @@
 	.donacion .block-plan-padrino .boton-donacion{
 		display: block;
 	}
+	.donacion .boton-donacion .form-contact .form-lista {
+		list-style: none;
+	}
 	.donacion .block-plan-padrino .boton-donacion .davivienda{
 		padding: 0;
 		margin-top: 40px;
@@ -199,7 +202,16 @@
 	margin: 50px;
 	
 }
-
+/* background noticias */
+.noticias-backround{
+	padding: 10px 50px;
+	background-color: #0F85B5;
+}
+/* .noticias-backround hr{
+	border: solid 3px #fff;
+	margin-left: 44px;
+	margin-top: -67px;
+} */
 .noticias .img-formacion {
 	border-radius: 5px !important;
 }
@@ -224,7 +236,9 @@
 }
 
 .noticias  .titulo-formacion {
-	border-bottom: 3px solid black ;
+	width: 100%;
+	border-bottom: solid 3px #fff;
+	color: #fff;
 	font-size: 40px;
 }
 
@@ -241,6 +255,10 @@
 	.noticias{
 		display: block;
 		text-align: center;
+	}
+	.noticias .img-formacion {
+		width: 100%;
+		height: auto;
 	}
 	.noticias .img-noticias {
 		justify-content: center;

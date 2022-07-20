@@ -32,8 +32,8 @@
     padding-bottom: 38px;
 }
 .icons-social .icons .img-icon{
-    width: 47px;
-    height: 47px;
+    width: 37px;
+    height: 37px;
     transition: .3s;
 }
 .icons-social .icons .a-icon .img-icon:hover{
@@ -41,8 +41,14 @@
     transition: .3s;
 }
 .icons-social .icons .icon-instagram{
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.icons-social .icons .icon-correo{
+    height: 50px;
+    width: 40px;
+    margin-top: -6px;
+    margin-left: 40px;
 }
 @media screen and (max-width: 310px){
     .icons-social .icons .img-icon {
@@ -50,8 +56,12 @@
         height: 37px;
     }
     .icons-social .icons .icon-instagram{
-        margin-left: 23px;
-        margin-right: 23px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    .icons-social .icons .icon-correo {
+        margin-top: -6px;
+        margin-left: 25px;
     }
 }
 
