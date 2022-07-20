@@ -243,7 +243,7 @@
 }
 
 .noticias .frase-formacion {
-	color: #0F85B5;
+	color: #fff;
 
 }
 
@@ -254,6 +254,22 @@
 @media screen and (max-width: 920px) {
 	.noticias{
 		display: block;
+		text-align: center;
+	}
+	.noticias-backround {
+		padding: 10px 0px;
+	}
+	.noticias .text-formacion {
+		text-align: justify;
+		margin-left: 0;
+	}
+	.text-presenciamisionera {
+		text-align: center;
+	}
+	.presencia-misionera {
+		text-align: justify;
+	}
+	.noticias .frase-formacion {
 		text-align: center;
 	}
 	.noticias .img-formacion {
