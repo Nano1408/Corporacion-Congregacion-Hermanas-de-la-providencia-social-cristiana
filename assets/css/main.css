@@ -128,6 +128,9 @@
 	margin: 0;
 	font-family: "Roboto", Helvetica, sans-serif;
 }
+.donacion .boton-donacion .davivienda .N-cuenta2{
+	margin-top: 10px;
+}
 .donacion .boton-donacion .davivienda .img-btn-transferir{
 	padding: 0px 60px;
 	border: none;
