@@ -1,0 +1,319 @@
+#tab3 .servicio-social{
+    width: 100%;
+    padding: 50px 0px 50px 70px;
+    line-height: 120px;
+    background-color: #2C8C2C;
+}
+#tab3 .servicio-social h4{
+    font-size: 32px;
+    font-weight: 300;
+    opacity: 0.8;
+    color: #ffffff;
+    font-family: 'Roboto', Helvetica, sans-serif;
+}
+#tab3 .servicio-social h2{
+    font-size: 64px;
+    font-weight: 500;
+    color: #ffffff;
+    font-family: 'Roboto', Helvetica, sans-serif;
+}
+/* imagen hermanas servicio social */
+#tab3 .img-hermanas-social{
+    text-align: center;
+    width: 100%;
+}
+#tab3 .img-hermanas-social img{
+    padding: 81px 0px;
+    width: 920px;
+    height: 724px;
+}
+/* text frase servicio social */
+#tab3 .text-frase-servicio h3{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    color: #2C8C2C;
+    margin-top: -40px;
+    font-family: 'Roboto', helvetica, sans-serif;
+}
+/* lista de servicios */
+#tab3 .list-servicio{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+#tab3 .list-servicio .lista{
+    width: 900px;
+    max-width: 100%;
+    font-size: 24px;
+    display: inline-table;
+    font-weight: 300;
+    list-style: circle outside none;
+    text-align: justify;
+    font-family: 'Roboto', Helvetica, sans-serif;
+}
+    /* sliders servicio social */
+    .trigger[type="radio"] {
+        display: none;
+    }
+    .container-social {
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        padding: 40px 30px 0px 0px;
+        z-index: 1;
+    }
+    .slide-social-hermana {
+        position: relative;
+        margin: 0 auto;
+        padding: 3em;
+        width: 863px;
+        height: 80%;
+        border-radius: 20px;
+        box-shadow: 0px 1px 2px 0px rgb(53, 53, 53);
+        overflow: hidden;
+    }
+    /*==================
+        Slides
+    ===================*/
+    #slide-role-hermana {
+        background: inherit;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 400%;
+        height: 100%;
+        z-index: 100;
+        transition: left .5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+        display: flex;
+        /* animation: 30s slidy infinite; */
+    }
+    .slide-hermana {
+        width: 50%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+    /* @keyframes slidy {
+        25% { left: 0%; }
+        50% { left: -100%; }
+        75% { left: -200%; }
+        100% { left: -300%;}
+        } */
+    /* backgrounds */
+    .container-social .slide-social-hermana #slide-role-hermana img{
+        width: 100%;
+        height: 100%;
+        float: left;
+    }
+    /*===================
+        BUTTONS
+    ====================*/
+    .btn-hermanas,
+    .btn-hermanas::after {
+        border-radius: 50%;
+        transition: all .5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    }
+    .btn-hermanas {
+        border: 1px solid rgba(0, 0, 0, 0.281);
+        background: rgb(255, 255, 255);
+        box-shadow: 0px 2px 2px rgba(56, 56, 56, 0.822);
+        position: absolute;
+        bottom: 12%;
+        width: 28px;
+        height: 28px;
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+    .btn-hermanas:nth-of-type(1) {
+        left: 38%;
+    }
+    .btn-hermanas:nth-of-type(2) {
+        left: 45%;
+    }
+    .btn-hermanas:nth-of-type(3) {
+        left: 52%;
+    }
+    .btn-hermanas:nth-of-type(4) {
+        left: 59%;
+    }
+    .btn-hermanas:hover {
+        transform: scale(1.4);
+    }
+    /* buttons Atom! */
+    .btn-hermanas::after {
+        content: "";
+        display: inline-block;
+        border: 1px solid white;
+        background: #2C8C2C;
+        width: 20px;
+        height: 20px;
+        margin: 3px 3px;
+        transform: scale(.5, .5);
+        box-shadow: 0px 1px 5px rgba(56, 56, 56, 0.822);
+    }
+    /*====================
+            L O G I C 
+     ===================*/
+    /* slide logic */
+    .trigger[type="radio"]:checked#slide-2-trigger~div.slide-social-hermana>div#slide-role-hermana {
+        left: -100%;
+    }
+    
+    .trigger[type="radio"]:checked#slide-3-trigger~div.slide-social-hermana>div#slide-role-hermana {
+        left: -200%;
+    }
+    
+    .trigger[type="radio"]:checked#slide-4-trigger~div.slide-social-hermana>div#slide-role-hermana {
+        left: -300%;
+    }
+    /* button logic */
+    .trigger[type="radio"]:checked+label.btn-hermanas {
+        transform: scale(1.2);
+        border: 1px solid rgba(53, 53, 53, 0.308);
+    } 
+    .trigger[type="radio"]:checked+label.btn-hermanas::after {
+        transform: scale(1.1, 1.1);
+        background: #2C8C2C;
+    }
+    /*=====================================================================================
+                    MEDIA QUERIES
+    =======================================================================================*/
+    @media only screen and (max-width:940px){
+        #tab3 .img-hermanas-social img{
+            width: 640px;
+            height: 650px;
+        }
+        }
+    @media only screen and (max-width: 900px) {
+        .container-social .slide-social-hermana #slide-role-hermana img{
+            width: 100%;
+            height: 600px;
+        }
+        .slide-social-hermana {
+            width: 90%;
+            height: 600px;
+        }
+        .btn-hermanas:nth-of-type(1) {
+            left: 93%;
+            bottom: 90%;
+        }
+        .btn-hermanas:nth-of-type(2) {
+            left: 93%;
+            bottom: 80%;
+        }
+        .btn-hermanas:nth-of-type(3) {
+            left: 93%;
+            bottom: 70%;
+        }
+        .btn-hermanas:nth-of-type(4) {
+            left: 93%;
+            bottom: 60%;
+        }
+        #tab3 .list-servicio {
+            padding: 20px;
+        }
+    }
+ @media only screen and (max-width:768px){
+     #tab3 .img-hermanas-social img{
+        width: 100%;
+        height: auto;
+        padding: 81px 20px;
+        }
+    #tab3 .servicio-social{
+        padding: 30px 0px 10px 20px;
+    }
+    #tab3 .servicio-social h4{
+        font-size: 22px;
+    }
+    #tab3 .servicio-social h2{
+        font-size: 48px;
+    }
+    /* slide social hermanas */
+    .container-social .slide-social-hermana #slide-role-hermana img{
+        height: 400px;
+    }
+    .slide-social-hermana {
+        width: 90%;
+        height: 400px;
+    }
+    /* type label checkbox */
+    .btn-hermanas:nth-of-type(1) {
+        left: 93%;
+        bottom: 85%;
+    }
+    .btn-hermanas:nth-of-type(2) {
+                left: 93%;
+                bottom: 75%;
+    }
+    .btn-hermanas:nth-of-type(3) {
+        left: 93%;
+        bottom: 65%;
+    }
+    .btn-hermanas:nth-of-type(4) {
+                left: 93%;
+                bottom: 55%;
+    }
+    #tab3 .text-frase-servicio h3 {
+        margin-top: -390px;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .btn-hermanas:nth-of-type(1) {
+        left: 91%;
+    }
+    .btn-hermanas:nth-of-type(2) {
+        left: 91%;
+    }
+    .btn-hermanas:nth-of-type(3) {
+        left: 91%;
+    }
+    .btn-hermanas:nth-of-type(4) {
+        left: 91%;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .container-social .slide-social-hermana #slide-role-hermana img{
+        width: 100%;
+        height: 300px;
+     }
+    .slide-social-hermana {
+        width: 90%;
+        height: 300px;
+    }
+    .btn-hermanas {
+        margin-left: -10px;
+        transform: scale(1.1);
+    }
+    .btn-hermanas:nth-of-type(1) {
+        left: 93%;
+        bottom: 90%;
+    }
+    .btn-hermanas:nth-of-type(2) {
+        left: 93%;
+        bottom: 80%;
+    }
+    .btn-hermanas:nth-of-type(3) {
+        left: 93%;
+        bottom: 70%;
+    }
+    .btn-hermanas:nth-of-type(4) {
+        left: 93%;
+        bottom: 60%;
+    }
+    #tab3 .text-frase-servicio h3 {
+        margin-top: -480px;
+    }
+}
+@media only screen and (max-width:300px){
+    #tab3 .servicio-social h4{
+        font-size: 18px;
+        word-wrap: break-word;
+    }
+    #tab3 .servicio-social h2{
+        font-size: 38px;
+        word-wrap: break-word;
+
+    }
+}
