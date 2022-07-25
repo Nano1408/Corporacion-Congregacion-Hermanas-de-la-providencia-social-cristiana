@@ -16,6 +16,8 @@
 	<link rel="stylesheet" href="./assets/css/acerca-de.css">
 	<link rel="stylesheet" href="./assets/css/calendar.css">
 	<link rel="stylesheet" href="./assets/css/services.css">
+	<link rel="stylesheet" href="./assets/css/donaciones.css">
+	<link rel="stylesheet" href="./assets/scss/carousel.scss">
 
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
@@ -383,9 +385,35 @@
 				</div>
 			</section>
 			<section id="tab4" class="contenido contenido2">
-				<h1>Blog</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea numquam odio voluptate. Aliquam incidunt similique, et quasi ducimus quos aut autem non dignissimos dicta sit provident, voluptatibus ut blanditiis perspiciatis cum, vel temporibus minima enim. Asperiores omnis placeat officiis a tenetur sit recusandae, reprehenderit neque. Tempora quibusdam, perferendis id ratione culpa dolorum! Nemo, animi? Eveniet eaque perspiciatis, libero quia, pariatur iusto, ipsum porro quod, ut tempora cum quo non illum. Non eligendi incidunt sequi, molestias quia perspiciatis architecto repudiandae quod.</p><br>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam ipsa ducimus amet at cumque sed numquam, explicabo impedit optio quas iste aperiam quidem ipsam rerum libero voluptatibus perferendis officiis voluptatum!</p>
+				<div class="donacion-title">
+					<h2>Donaciones</h2>
+					<h4>UN CORAZON VOLUNTARIO</h4>
+				</div>
+				<div class="p-versiculo">
+					<p>Así como el Hijo del Hombre no vino para ser servido, sino para servir y para dar su vida en rescate por muchos. (Mateo 20:28).</p>
+				</div>
+				<!-- inicia slider donaciones -->
+				<div class="slide-contenedor">
+					<div class="miSlider fade">
+						<img src="./assets/img/magico-momento-donacion.jpeg" alt="">
+					</div>
+					<div class="miSlider fade">
+						<img src="./assets/img/magico-momento-slide-2.jpeg" alt="">
+					</div>
+					<div class="miSlider fade">
+						<img src="./assets/img/magico-momento-slide-3.jpeg" alt="">
+					</div>
+					<div class="direcciones">
+						<a href="#" class="atras" onclick="avanzaSlide(-1)">&#10094;</a>
+						<a href="#" class="adelante" onclick="avanzaSlide(1)">&#10095;</a>
+					</div>
+					<div class="barras">
+						<span class="barra active" onclick="posicionSlide(1)"></span>
+						<span class="barra" onclick="posicionSlide(2)"></span>
+						<span class="barra" onclick="posicionSlide(3)"></span>
+					</div>
+				</div>
+				<!-- termina slider donaciones -->
 			</section>
 			<section id="tab5" class="contenido contenido2">
 				<h1>Contacto</h1>
@@ -435,6 +463,8 @@
 	</div>
 	<script src="./assets/js/main.js"></script>
 	<script src="./assets/js/burger.js"></script>
+	<script src="./assets/js/slide-donacion.js"></script>
+	<script src="./assets/js/slider-donacion.js"></script>
 	<!-- script de boostrap -->
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
