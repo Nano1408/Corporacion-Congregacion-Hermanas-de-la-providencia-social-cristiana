@@ -1,6 +1,6 @@
 #tab4 .donacion-title{
     background-color: #2C8C2C;
-    padding: 67px 0px;
+    padding: 10px 0px;
     padding-left: 96px;
     color: #fff;
     font-family: 'Roboto', Helvetica, sans-serif;
@@ -18,43 +18,180 @@
     font-size: 32px;
     font-weight: 500;
     text-align: center;
-    padding: 82px 100px 40px 100px;
+    padding: 40px 100px 40px 100px;
     font-family: 'Roboto', Helvetica, sans-serif;
 }
 /* slider donaciones */
-.slider-donacion-hermana{
-    width: 50%;
-    margin-left: 25%;
+.container-slider-donacion{
+    width: 100%;
+    justify-content: center;
     margin-bottom: 40px;
-    /* height: 500px; */
+}
+.slider-donacion{
+    width: 800px;
+    height: 600px;
+    border-radius: 10px;
     overflow: hidden;
 }
-.slider-donacion-hermana .ul-slider-donacion{
+.slides-donacion{
+    width: 500%;
+    height: 500px;
     display: flex;
-    animation: donacion-slider 20s infinite alternate linear;
-    width: 400%;
 }
-.slider-donacion-hermana .li-slider-donacion{
-    width: 50%;
-    list-style: none;
+.slides-donacion input{
+    display: none;
 }
-.slider-donacion-hermana .li-slider-donacion img{
-    width: 100%;
-    margin-left: -22px;
-    height: 70%;
-    object-fit:cover;
+.slide-hermana{
+    width: 20%;
+    transition: 2s;
 }
-@keyframes donacion-slider {
-    0% {margin-left: 0;}
-    20% {margin-left: 0;}
-
-    25% {margin-left: -100%;}
-    45% {margin-left: -100%;}
-
-    50% {margin-left: -200%;}
-    70% {margin-left: -200%;}
-
-    75% {margin-left: -300%;}
-    100% {margin-left: -300%;}
+.slide-hermana img{
+    width: 800px;
+    height: 600px;
+    object-fit: cover;
 }
-
+/* slide navigation manual */
+.navigation-manual{
+    position:absolute;
+    width: 800px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+    border: 2px solid #2C8C2C;
+    padding:5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child){   
+    margin-right: 10%;
+}
+.manual-btn:hover{
+    background-color: #2C8C2C;
+}
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+/* css automatic navigation */
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    margin-top: 560px;
+    justify-content: center;
+}
+.navigation-auto div{
+    border: 2px solid #2C8C2C;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 80px;
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #2C8C2C;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #2C8C2C;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #2C8C2C;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #2C8C2C;
+}
+.text-slide{
+    background-color: #2c8c2c6d;
+    color: #fff;
+    padding-top: 0;
+}
+.text-slide p{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Roboto", Helvetica, sans-serif;
+}
+@media screen and (max-width:900px) {
+.slider-donacion{
+        max-width: 500px;
+        height: 300px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+.slide-hermana img{
+        max-width: 500px;
+        height: 300px;
+        object-fit: fill;
+    }
+/* slide navigation manual */
+.navigation-manual{
+    width: 500px;
+    margin-top: -234px;
+}
+.navigation-auto {
+    width: 500px;
+    margin-top: 266px;
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 50px;
+}
+}
+@media screen and (max-width:530px) {
+    .slider-donacion{
+            max-width: 300px;
+            height: 400px;
+            border-radius: 10px;
+        }
+    .slide-hermana img{
+            max-width: 300px;
+            height: 400px;
+            object-fit:fill;
+        }
+    /* slide navigation manual */
+    .navigation-manual{
+        width: 300px;
+        margin-top: -140px;
+    }
+    .navigation-auto {
+        width: 300px;
+        margin-top: 360px;
+    }
+    .navigation-auto div:not(:last-child){
+        margin-right: 30px;
+    }
+    }
+    @media screen and (max-width:310px) {
+        .slider-donacion{
+                max-width: 250px;
+                height: 300px;
+                border-radius: 10px;
+            }
+        .slide-hermana img{
+                max-width: 250px;
+                height: 300px;
+                object-fit:fill;
+            }
+        /* slide navigation manual */
+        .navigation-manual{
+            width: 250px;
+            margin-top: -229px;
+        }
+        .navigation-auto {
+            width: 250px;
+            margin-top: 271px;
+        }
+        .navigation-auto div:not(:last-child){
+            margin-right: 25px;
+        }
+        }
