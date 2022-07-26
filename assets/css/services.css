@@ -33,7 +33,7 @@
     font-size: 36px;
     font-weight: 700;
     color: #2C8C2C;
-    margin-top: -40px;
+    margin-top: 40px;
     font-family: 'Roboto', helvetica, sans-serif;
 }
 /* lista de servicios */
@@ -256,7 +256,7 @@
                 bottom: 55%;
     }
     #tab3 .text-frase-servicio h3 {
-        margin-top: -390px;
+        margin-top: -140px;
     }
 }
 @media only screen and (max-width: 450px) {
@@ -303,7 +303,7 @@
         bottom: 60%;
     }
     #tab3 .text-frase-servicio h3 {
-        margin-top: -480px;
+        margin-top: -250px;
     }
 }
 @media only screen and (max-width:300px){

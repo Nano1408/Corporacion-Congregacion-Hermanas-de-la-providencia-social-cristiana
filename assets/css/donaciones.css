@@ -41,11 +41,11 @@
 .slides-donacion input{
     display: none;
 }
-.slide-hermana{
+.slide-hermana-donacion{
     width: 20%;
     transition: 2s;
 }
-.slide-hermana img{
+.slide-hermana-donacion img{
     width: 800px;
     height: 600px;
     object-fit: cover;
@@ -129,7 +129,7 @@
         border-radius: 10px;
         overflow: hidden;
     }
-.slide-hermana img{
+.slide-hermana-donacion img{
         max-width: 500px;
         height: 300px;
         object-fit: fill;
@@ -153,7 +153,7 @@
             height: 400px;
             border-radius: 10px;
         }
-    .slide-hermana img{
+    .slide-hermana-donacion img{
             max-width: 300px;
             height: 400px;
             object-fit:fill;
@@ -177,7 +177,7 @@
                 height: 300px;
                 border-radius: 10px;
             }
-        .slide-hermana img{
+        .slide-hermana-donacion img{
                 max-width: 250px;
                 height: 300px;
                 object-fit:fill;
@@ -195,3 +195,126 @@
             margin-right: 25px;
         }
         }
+        /* ESTILOS OBJETIVO */
+        .objetivo{
+            background-color: #C0DDC0;
+            padding: 80px 150px;
+        }
+        .objetivo h3{
+            color: #2C8C2C;
+            font-family: "Roboto", Helvetica, sans-serif;
+            font-size: 36px;
+        }
+        .objetivo p{
+            color: #000000;
+            text-align: justify;
+            font-family: "Roboto", Helvetica, sans-serif;
+            font-size: 20px;
+        }
+        /* apoyo de proyectos */
+        .apoyo-proyecto{
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            text-align: center;
+            font-family: "Roboto", Helvetica, sans-serif;
+        }
+        .apoyo-proyecto .h3apoyo{
+            margin-bottom: 40px;
+            color: #2C8C2C;
+            font-size: 36px;
+        }
+        .apoyo-proyecto .apoya-proyectos li{
+            font-size: 25px;
+            color: #000000ae;
+            list-style: decimal;
+        }
+        .apoyo-proyecto .apoya-proyectos{
+            display: inline-table;
+            text-align: justify;
+        }
+        /* recuerda el apoyo */
+        .recuerda{
+            width: 100%;
+            padding: 20px 90px;
+            background-color: #2C8C2C80;
+            font-family: "Roboto", Helvetica, sans-serif;
+        }
+        .recuerda h3{
+            margin-top: 40px;
+            margin-bottom: 30px;
+            font-size: 36px;
+            color: #2C8C2C;
+        }
+        .recuerda .text-recuerda .icon-recuerda img{
+            width: 100px;
+            height: 100px;
+            transform: scaleX(-1);
+        }
+        .recuerda .text-recuerda{
+            display: flex;
+        }
+.recuerda .text-recuerda .parrafo-recuerda p{
+    font-size: 25px;
+    padding-right: 220px;
+    padding-left: 30px;
+    text-align: justify;
+}
+/* media query responsive */
+@media screen and (max-width:900px) {
+#tab4 .donacion-title h2{
+    font-size: 22px;
+}
+#tab4 .donacion-title h4{
+    font-size: 50px;
+}
+#tab4 .donacion-title{
+    padding-left: 46px;
+} 
+/* recuerda */
+.recuerda .text-recuerda .parrafo-recuerda p{
+    font-size: 25px;
+    padding-right: 20px;
+    padding-left: 30px;
+    text-align: justify;
+}
+/* puedes apoyar un proyecto especifico */
+.apoyo-proyecto {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+}
+@media screen and (max-width:768px) {
+#tab4 .donacion-title h4{
+    font-size: 38px;
+    }
+.recuerda h3{
+    text-align: center;
+}
+.objetivo {
+    background-color: #C0DDC0;
+    padding: 90px 50px;
+}
+#tab4 .p-versiculo p {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+}
+@media screen and (max-width:639px) {
+    .recuerda{
+        padding: 20px 40px 20px 10px;
+    }
+}
+@media screen and (max-width:500px) {
+    .recuerda .text-recuerda{
+        display: inline-block;
+    }
+    .recuerda .text-recuerda .parrafo-recuerda p{
+        word-break: break-all;
+    }
+}
+@media screen and (max-width:300px) {
+    #tab4 .donacion-title h4 {
+        font-size: 30px;
+    }
+}
