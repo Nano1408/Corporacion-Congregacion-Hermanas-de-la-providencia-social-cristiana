@@ -29,7 +29,7 @@
 }
 /* text frase servicio social */
 #tab3 .text-frase-servicio{
-    top:10px;
+    top:0;
 }
 #tab3 .text-frase-servicio h3{
     text-align: center;
@@ -195,19 +195,19 @@
         }
         .btn-hermanas:nth-of-type(1) {
             left: 93%;
-            bottom: 80%;
+            bottom: 70%;
         }
         .btn-hermanas:nth-of-type(2) {
             left: 93%;
-            bottom: 70%;
+            bottom: 60%;
         }
         .btn-hermanas:nth-of-type(3) {
             left: 93%;
-            bottom: 60%;
+            bottom: 50%;
         }
         .btn-hermanas:nth-of-type(4) {
             left: 93%;
-            bottom: 50%;
+            bottom: 40%;
         }
         #tab3 .list-servicio {
             padding: 20px;
@@ -276,6 +276,9 @@
         width: 100%;
         height: 300px;
      }
+     #tab3 .text-frase-servicio{
+        top:-70px;
+    }
     .slide-social-hermana {
         width: 90%;
         height: 300px;
