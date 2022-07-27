@@ -33,7 +33,8 @@
     font-size: 36px;
     font-weight: 700;
     color: #2C8C2C;
-    margin-top: 40px;
+    top: 0;
+    /* padding: 0 20px; */
     font-family: 'Roboto', helvetica, sans-serif;
 }
 /* lista de servicios */
@@ -197,25 +198,31 @@
         }
         .btn-hermanas:nth-of-type(1) {
             left: 93%;
-            bottom: 90%;
+            bottom: 80%;
         }
         .btn-hermanas:nth-of-type(2) {
             left: 93%;
-            bottom: 80%;
+            bottom: 70%;
         }
         .btn-hermanas:nth-of-type(3) {
             left: 93%;
-            bottom: 70%;
+            bottom: 60%;
         }
         .btn-hermanas:nth-of-type(4) {
             left: 93%;
-            bottom: 60%;
+            bottom: 50%;
         }
         #tab3 .list-servicio {
             padding: 20px;
         }
+        #tab3 .text-frase-servicio h3{
+            margin-top: -120px;
+        }
     }
  @media only screen and (max-width:768px){
+    .container-social {
+        height: 70vh;
+    }
      #tab3 .img-hermanas-social img{
         width: 100%;
         height: auto;
@@ -244,16 +251,16 @@
         bottom: 85%;
     }
     .btn-hermanas:nth-of-type(2) {
-                left: 93%;
-                bottom: 75%;
+        bottom: 70%;
+        left: 93%;
     }
     .btn-hermanas:nth-of-type(3) {
         left: 93%;
-        bottom: 65%;
+        bottom: 55%;
     }
     .btn-hermanas:nth-of-type(4) {
-                left: 93%;
-                bottom: 55%;
+        bottom: 35%;
+        left: 93%;
     }
     #tab3 .text-frase-servicio h3 {
         margin-top: -140px;
@@ -288,19 +295,19 @@
     }
     .btn-hermanas:nth-of-type(1) {
         left: 93%;
-        bottom: 90%;
+        bottom: 85%;
     }
     .btn-hermanas:nth-of-type(2) {
         left: 93%;
-        bottom: 80%;
+        bottom: 75%;
     }
     .btn-hermanas:nth-of-type(3) {
         left: 93%;
-        bottom: 70%;
+        bottom: 65%;
     }
     .btn-hermanas:nth-of-type(4) {
         left: 93%;
-        bottom: 60%;
+        bottom: 55%;
     }
     #tab3 .text-frase-servicio h3 {
         margin-top: -250px;
