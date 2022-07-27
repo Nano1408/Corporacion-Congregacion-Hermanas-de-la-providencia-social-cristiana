@@ -99,12 +99,6 @@
         background-size: cover;
         background-position: center;
     }
-    /* @keyframes slidy {
-        25% { left: 0%; }
-        50% { left: -100%; }
-        75% { left: -200%; }
-        100% { left: -300%;}
-        } */
     /* backgrounds */
     .container-social .slide-social-hermana #slide-role-hermana img{
         width: 100%;
@@ -218,9 +212,6 @@
         #tab3 .list-servicio {
             padding: 20px;
         }
-        /* #tab3 .text-frase-servicio h3{
-            margin-top: -120px;
-        } */
     }
  @media only screen and (max-width:768px){
     .container-social {
@@ -265,9 +256,6 @@
         bottom: 35%;
         left: 93%;
     }
-    /* #tab3 .text-frase-servicio h3 {
-        margin-top: -140px;
-    } */
 }
 @media only screen and (max-width: 450px) {
     .btn-hermanas:nth-of-type(1) {
@@ -312,9 +300,6 @@
         left: 93%;
         bottom: 55%;
     }
-    /* #tab3 .text-frase-servicio h3 {
-        margin-top: -250px;
-    } */
 }
 @media only screen and (max-width:300px){
     #tab3 .servicio-social h4{
