@@ -55,6 +55,9 @@
     color: rgba(0, 0, 0, 0.427);
     font-family: "Roboto", Helvetica, sans-serif;
 }
+.input-hermana:focus::placeholder{
+    color: rgba(0, 0, 0, 0.103);
+}
 .input-hermana:focus{
     border-bottom:2px solid #000;
 }
@@ -98,6 +101,12 @@
 .form-span{
     margin:0 5px 0 15px
 }
+/* =========================================================== 
+                Clases de sweetAlert css
+   ============================================================*/
+   .color-alert-footer{
+    color: #2C8C2C;
+   }
 @media screen and (min-width:1024px) {
     .form-div-hermana {
         margin-top: 20px;

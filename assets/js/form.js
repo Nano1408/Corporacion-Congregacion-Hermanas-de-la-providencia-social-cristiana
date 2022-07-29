@@ -11,8 +11,32 @@ async function handlesubmit(event){
             "accept": "application/json"
         } 
     })
+    // se ejecuta despues de aberse enviado el formulario
       if(response.ok){
         this.reset()
-        alert("Gracias por enviar tu mensaje, Dios te bendiga ")
+        // SweetAlert estructura
+        Swal.fire({
+          position: 'center',
+          icon: 'success',
+          title: 'Gracias Por enviar tu mensaje',
+          text:'Dios te bendiga',
+          showConfirmButton: false,
+          ConfirmButtonColor:'#fff',
+          footer:'<span class="color-alert-footer">Tu mensaje es importante para nosotros</span>',
+          backdrop:'true',
+          allowOutsideClick:'true',
+          allowScapeKey:'false',
+          allowEnterKey:'true',
+          stopKeydownPropagation:'true',
+          timerProgressBar:'<span class="color-alert-footer">true</span>',
+          timer: 7000,
+        })
+      }else{
+        Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: 'Valida tu conexion a internet!',
+          // footer: '<a href="">Why do I have this issue?</a>'
+        })
       }
 }
