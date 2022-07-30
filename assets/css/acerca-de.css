@@ -1,3 +1,79 @@
+.valores{
+    background-color: #0F85B5;
+    color: #fff;
+    width: 100%;
+    padding: 35px 0px 35px 109px;
+    margin-bottom: 20px;
+}
+.mision-vision{
+    display: flex;
+}
+.mision-vision .mision{
+    text-align: center;
+}
+.mision-vision .mision .tittle-mision button{
+    background-color: #5CC6F2;
+    font-size: 20px;
+    border: none;
+    cursor: default;
+    border-radius: 30px;
+    padding: 10px 100px;
+}
+.mision-vision .mision .img-mision img{
+    width: 180px;
+    height: 150px;
+}
+.mision-vision .mision .p-mision p{
+    padding: 10px 70px;
+    text-align: justify;
+}
+/* valores corporativos */
+.text-valores{
+    text-align: center;
+    margin-top: 20px;
+}
+.text-valores button{
+    background-color: #5CC6F2;
+    cursor:default;
+    border: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    border-radius: 30px;
+    padding: 10px 100px;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+.text-valores p{
+    padding: 0 300px;
+}
+.container-lista-valores{
+    display: flex;
+    margin: 40px 100px;
+}
+.container-lista-valores .valores-corporativos .img-valores-corporativos img{
+    width: 160px;
+    height: 120px;
+}
+.container-lista-valores .valores-corporativos{
+    text-align: center;
+}
+.container-lista-valores .valores-corporativos .tittle-valores-corporativos{
+    font-size: 20px;
+    padding: 15px 0;
+}
+.container-lista-valores .valores-corporativos .p-valores-corporativos{
+    font-size: 13px;
+    padding: 0 22px;
+    text-align: justify;
+}
+/* mision y vision */
+.valores h4{
+    font-size: 40px;
+    opacity: .7;
+}
+.valores h2{
+    font-size: 52px;
+}
 .title-nosotros{
     background-color:#0F85B5;
     width:100%;
@@ -120,7 +196,28 @@
     height: 569px;
     border-radius: 5px;
 }
+@media screen and (max-width:950px) {
+    .container-lista-valores {
+        margin: 40px 60px;
+    }
+    .text-valores p{
+        padding: 0 120px;
+    }
+}
 @media screen and (max-width: 900px) {
+    .valores {
+        padding: 35px 0px 35px 40px;
+    }
+    .valores h2 {
+        font-size: 40px;
+    }
+    .valores h4 {
+        font-size: 25px;
+    }
+    .container-lista-valores {
+        display: block;
+        margin: 40px 160px;
+    }
     .divina-providencia{
         margin: 71px 30px 61px 30px;
     }
@@ -142,6 +239,18 @@
     }
 }
 @media screen and (max-width: 768px) {
+    .text-valores p{
+        padding: 0 50px;
+    }
+    .mision-vision .mision .tittle-mision button {
+        padding: 10px 60px;
+    }
+    .mision-vision .mision .p-mision p {
+        padding: 10px 33px;
+    }
+    .container-lista-valores {
+        margin: 40px 60px;
+    }
     .divina-providencia{
         display: block;
     }
@@ -169,5 +278,33 @@
         max-width: 100%;
         height: auto;
         margin-left: 0px;
+    }
+}
+@media screen and (max-width:550px) {
+    .valores h2 {
+        font-size: 27px;
+    }
+    .valores h4 {
+        font-size: 18px;
+    }
+    .mision-vision {
+        display: block;
+    }
+    .mision-vision .mision .p-mision p {
+        padding: 10px 60px;
+    }
+    .text-valores p{
+        padding: 0 30px;
+    }
+}
+@media screen and (max-width:400px) {
+    .text-valores p{
+        padding: 0 20px;
+    }
+    .container-lista-valores {
+        margin: 40px 11px;
+    }
+    .mision-vision .mision .p-mision p {
+        padding: 10px 20px;
     }
 }
