@@ -1,25 +1,35 @@
+#tab5{
+    background-image: url("/assets/img/background-hermanas-contacto.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
 .container-form{
     display: flex;
     width: 100%;
     margin-top: 100px;
     padding: 0 100px;
     justify-content: center;
-}
-.container-form .ubicacion-map{
-    width: 50%;
-}
-.container-form .ubicacion-map iframe{
-    border-radius: 8px;
+}    .ubicacion-map{
+    width: 100%;
+    margin-bottom: 0;
+    z-index: -1;
+}    
+.ubicacion-map iframe{
+    /* border-radius: 8px; */
+    height: 450px;
+    max-height: 600px;
     box-shadow:0 0 40px -10px #000;
+    margin-bottom: -6px;
 }
 .form-hermanas{
     width:400px;
     height:600px;
-    background:#00A7EB;
+    background:#fff;
     border-radius:8px;
     box-shadow:0 0 40px -10px #000;
-    margin-right: 100px;
-    margin-bottom: 250px;
+    margin-right: 0;
+    margin-bottom: 50px;
     padding:
     20px 30px;max-width:calc(100vw - 40px);
     box-sizing:border-box;
@@ -29,18 +39,44 @@
 .title-form h3{
     font-size: 60px;
     margin-top: 140px;
-    color: #2C8C2C;
+    padding-top: 53px;
+    padding-bottom: 53px;
+    background-color: #0F85B5;
+    color: #fff;
     text-shadow: 1px 1px 4px #000;
     text-align: center;
+    text-transform: uppercase;
 }
-.form-hermanas h2{
-    margin:10px 0;
-    padding-bottom:10px;
-    width:180px;
+.title-contactenos{
+    content:'Hi';
+    position: absolute;
+    background-color: #0F85B5FA;
+    top: -70px;
+    left: 13%;
+    padding: 40px 0px;
+    width: 70%;
+    text-align: center;
+    border-radius: 20px;
+}
+.title-contactenos div{
+    font-size:13px;
+    color: #fff;
+    word-break: break-all;
+}
+.form-span{
+    margin:0 5px 0 0px;
+    position: relative;
+    font-size: 10px;
+}
+.title-contactenos h2{
+    margin-top: 25px;
     color:#fff;
-    border-bottom:3px solid #fff;
+}
+.input-contenido{
+    padding-top: 100px;
 }
 .input-hermana{
+    position: relative;
     width:100%;
     padding:10px;
     box-sizing:border-box;
@@ -49,7 +85,7 @@
     resize:none;
     border:0;
     font-family:'Montserrat',sans-serif;
-    transition:all .3s;border-bottom:2px solid #fff;    
+    transition:all .3s;border-bottom:2px solid #25A6DB;    
 }
 .input-hermana::placeholder{
     color: rgba(0, 0, 0, 0.427);
@@ -66,7 +102,8 @@
     display:block;
     margin:28px 0 0;
     font-size:14px;
-    color:#ffff;
+    color:#000;
+    position: relative;
 }
 .btn-form-send{
     float:right;
@@ -74,9 +111,10 @@
     margin:8px 0 0;
     font-family:'Montserrat',sans-serif;
     border-radius: 8px;
-    border:2px solid #fff;
+    border:2px solid #25A6DB;
+    box-shadow: 0px 4px 7px 2px #25A6DB;
     background:0;
-    color:#ffff;
+    color:#25A6DB;
     cursor:pointer;
     transition:all .3s
 }
@@ -84,71 +122,53 @@
     background:#000;
     color:#fff
 }
-.form-div-hermana{
-    content:'Hi';
-    display: flex;
-    position:absolute;
-    bottom:-24px;
-    right:-20px;
-    background:#2C8C2C;
-    color:#fff;
-    width:320px;
-    padding:16px 4px 16px 0;
-    border-radius:6px;
-    font-size:13px;
-    box-shadow:10px 10px 40px -14px #000
-}
-.form-span{
-    margin:0 5px 0 15px
-}
 /* =========================================================== 
                 Clases de sweetAlert css
    ============================================================*/
    .color-alert-footer{
     color: #2C8C2C;
    }
-@media screen and (min-width:1024px) {
-    .form-div-hermana {
-        margin-top: 20px;
-    }
-}
+   /* =========================================================== 
+                Media query responsive
+   ============================================================*/
 @media screen and (max-width:900px) {
-    .container-form .ubicacion-map iframe{
-        height: 400px;
+    .ubicacion-map iframe{
+        height: 250px;
+    }
+    .title-form h3 {
+        font-size: 40px;
+        margin-top: 140px;
+        padding-top: 33px;
+        padding-bottom: 33px;
     }
 }
 @media screen and (max-width:768px) {
-    .container-form{
-        display: block;
-        justify-items: center;
-        padding: 0 22%;
-    }
-    .container-form .ubicacion-map {
+    .ubicacion-map {
         width: 100%;
-        margin-bottom: 150px;
+        padding-bottom: 2px;
     }
     .form-hermanas {
         margin-bottom: 100px;
     }
 }
 @media screen and (max-width:540px) {
+    .title-form h3 {
+        font-size: 30px;
+        margin-top: 140px;
+        padding-top: 23px;
+        padding-bottom: 23px;
+    }
     .container-form{
-        display: block;
         padding: 0 50px;
     }
     .form-hermanas {
         width: 100%;
     }
-    .form-hermanas h2 {
+    .title-contactenos h2 {
         width: 100%;
     }
 }
 @media screen and (max-width:400px) {
-    .form-div-hermana {
-        display: block;
-        padding: 16px 4px 16px 10px;
-        width: 100%;
-    }
     .form-span{
         margin:0 5px 0 1px
     }
