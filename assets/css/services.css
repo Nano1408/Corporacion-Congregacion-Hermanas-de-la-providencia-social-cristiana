@@ -30,6 +30,8 @@
 /* text frase servicio social */
 #tab3 .text-frase-servicio{
     top:0;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 #tab3 .text-frase-servicio h3{
     text-align: center;

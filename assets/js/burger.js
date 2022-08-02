@@ -13,6 +13,6 @@ const MenuLink = document.querySelectorAll(".menu a[href^=\"#\"]");
 MenuLink.forEach(MenuLink =>{
     MenuLink.addEventListener("click", function(){
         NavLista.classList.remove("menu_visible");
-    })
-})
+    });
+});
 });
