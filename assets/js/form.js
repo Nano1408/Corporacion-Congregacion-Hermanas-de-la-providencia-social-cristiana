@@ -1,21 +1,18 @@
-const $form = document.querySelector(".form-hermanas");
-$form.addEventListener("submit", handlesubmit);
+//script de la API email js
+const btn = document.getElementById('button-form');
 
-async function handlesubmit(event){
-    event.preventDefault()
-    const form = new FormData(this)
-    const response = await fetch(this.action, {
-        method: this.method,
-        body: form,
-        headers: {
-            "accept": "application/json"
-        } 
-    })
-    // se ejecuta despues de aberse enviado el formulario
-      if(response.ok){
-        this.reset()
-        // SweetAlert estructura
-        Swal.fire({
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Enviando Espere...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_6hsujk9';
+
+   emailjs.sendForm(serviceID, templateID, this).then(() => {
+      btn.value = 'Enviar Mensaje';
+          Swal.fire({
           position: 'center',
           icon: 'success',
           title: 'Gracias Por enviar tu mensaje',
@@ -32,12 +29,15 @@ async function handlesubmit(event){
           timerProgressBar:'<span class="color-alert-footer">true</span>',
           timer: 7000,
         })
-      }else{
-        Swal.fire({
-          icon: 'error',
-          title: 'Oops...',
-          text: 'Valida tu conexion a internet!',
-          // footer: '<a href="">Why do I have this issue?</a>'
-        })
-      }
-}
+    }, (err) => {
+      btn.value = 'Enviar Mensaje';
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Error al enviar tu mensaje, vuelve a intentar!',
+        showConfirmButton:true,
+        ConfirmButtonText: "Salir",
+        // footer: '<a href="">Error al enviar tu mensaje</a>'
+      });
+    });
+});

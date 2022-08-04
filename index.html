@@ -580,7 +580,7 @@
 					<h3>contactate con nosotros</h3>
 				</div>
 				<div class="container-form">
-				<form action="https://formspree.io/f/mdojnnvz" method="POST" class="form-hermanas">
+				<form id="form" class="form-hermanas">
 					<div class="title-contactenos">
 						<h2>Tus Datos</h2>
 						<div><span class="fa fa-phone form-span"></span> 604 2545379</div>
@@ -588,13 +588,13 @@
 					</div>
 					<div class="input-contenido">
 						<p type="*Nombre:" class="p-form-hermana"><input type="text" name="name" placeholder="Escribe tu nombre completo..." class="input-hermana" required></input></p>
-						<p type="*Numero telefono:" class="p-form-hermana"><input type="tel" name="name" placeholder="Numero telefonico..." class="input-hermana" required></input></p>
+						<p type="*Numero telefono:" class="p-form-hermana"><input type="tel" name="phone" placeholder="Numero telefonico..." class="input-hermana" required></input></p>
 						<p type="*Email:" class="p-form-hermana"><input type="email" name="email" placeholder="Escribe tu correo electronico.." class="input-hermana" required></input></p>
 						<p type="Mensaje:" class="p-form-hermana"><textarea name="message" placeholder="Dejanos un mensaje.." class="input-hermana"></textarea></p>
-					    <button type="submit" class="btn-form-send">Enviar Mensaje</button>
+						<input type="submit" id="button-form" class="btn-form-send" value="Enviar Mensaje" >
 				    </div>
 				  </form>
-			</div>
+			</div>	
 			<!-- iframe google map start-->
 			<div class="ubicacion-map">
 				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15864.173101388542!2d-75.564218!3d6.25803!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4428fac8793d3d%3A0xd6e7e1ba569b2ea1!2sCl.%2060%20%2F%20Miranda%20%2350A-35%2C%20Medell%C3%ADn%2C%20La%20Candelaria%2C%20Medell%C3%ADn%2C%20Antioquia%2C%20Colombia!5e0!3m2!1ses-419!2sus!4v1658975112421!5m2!1ses-419!2sus" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -657,6 +657,12 @@
 	<script src="./assets/js/slide-donacion.js"></script>
 	<script src="./assets/js/slider-donacion.js"></script>
 	<script src="./assets/js/form.js"></script>
+	<!-- script form of contact -->
+	<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+  emailjs.init('TwAVGVUwAQPNV6LG-')
+  </script>
 	<!-- script de boostrap -->
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
