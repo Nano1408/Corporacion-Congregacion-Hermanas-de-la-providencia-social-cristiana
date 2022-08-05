@@ -1,8 +1,7 @@
 //script de la API email js
 const btn = document.getElementById('button-form');
 
-document.getElementById('form')
- .addEventListener('submit', function(event) {
+document.getElementById('form').addEventListener('submit', function(event) {
    event.preventDefault();
 
    btn.value = 'Enviando Espere...';
@@ -11,7 +10,11 @@ document.getElementById('form')
    const templateID = 'template_6hsujk9';
 
    emailjs.sendForm(serviceID, templateID, this).then(() => {
+   //esta linea se ejecuta despues de enviar el form para despues limpiar el form y aparecer la alerta
+   document.getElementById("form").reset();
+
       btn.value = 'Enviar Mensaje';
+         //sweetAlert
           Swal.fire({
           position: 'center',
           icon: 'success',

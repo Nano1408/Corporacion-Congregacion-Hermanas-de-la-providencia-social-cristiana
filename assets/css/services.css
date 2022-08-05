@@ -39,25 +39,34 @@
     font-weight: 700;
     color: #2C8C2C;
     top: 0;
-    /* padding: 0 20px; */
     font-family: 'Roboto', helvetica, sans-serif;
 }
 /* lista de servicios */
 #tab3 .list-servicio{
-    width: 100%;
+    margin: 100px;
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 30px;
 }
 #tab3 .list-servicio .lista{
-    width: 900px;
-    max-width: 100%;
-    font-size: 24px;
-    display: inline-table;
-    font-weight: 300;
-    list-style: circle outside none;
-    text-align: justify;
-    font-family: 'Roboto', Helvetica, sans-serif;
+    width: 100%;
+    text-align: center;
+    padding-left: 0;
+    list-style: none;
+    font-family: "Roboto", Helvetica, sans-serif;
+}
+#tab3 .list-servicio .lista .container-fila-lista{
+    width: 100%;
+    margin-bottom: 100px;
+    place-items: flex-end;
+    display: flex;
+    justify-content: space-around;
+}
+#tab3 .list-servicio .lista .container-fila-lista .item-lista-div .item-lista-li{
+    margin-top: 20px;
+}
+#tab3 .list-servicio .lista .container-fila-lista .item-lista-div-medio{
+    max-width: 450px;
+    padding-right: 30px;
+    padding-left: 30px;
 }
     /* sliders servicio social */
     .trigger[type="radio"] {

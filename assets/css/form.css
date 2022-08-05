@@ -135,7 +135,8 @@
    ============================================================*/
 @media screen and (max-width:900px) {
     .ubicacion-map iframe{
-        height: 250px;
+        width: 600px;
+        height: 400px;
     }
     .title-form h3 {
         font-size: 40px;
@@ -146,8 +147,12 @@
 }
 @media screen and (max-width:768px) {
     .ubicacion-map {
+        width: 90%;
+        margin-left: 5%;
+    }
+    .ubicacion-map iframe{
         width: 100%;
-        padding-bottom: 2px;
+        height: 300px;
     }
     .form-hermanas {
         margin-bottom: 100px;
