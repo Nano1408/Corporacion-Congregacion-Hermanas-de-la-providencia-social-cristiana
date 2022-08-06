@@ -46,15 +46,18 @@
     margin: 100px;
     text-align: center;
 }
+.item-lista-div{
+    max-width: 350px;
+}
 #tab3 .list-servicio .lista{
-    width: 100%;
+    /* width: 100%; */
     text-align: center;
     padding-left: 0;
     list-style: none;
     font-family: "Roboto", Helvetica, sans-serif;
 }
 #tab3 .list-servicio .lista .container-fila-lista{
-    width: 100%;
+    /* width: 100%; */
     margin-bottom: 100px;
     place-items: flex-end;
     display: flex;
@@ -67,6 +70,14 @@
     max-width: 450px;
     padding-right: 30px;
     padding-left: 30px;
+}
+#tab3 .list-servicio .lista .container-fila-lista img:hover{
+    transform: scale(1.06);
+    transition: .3s;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    /* box-shadow: rgb(0, 167, 235, 0.4) 0px 5px, rgb(0, 167, 235, 0.3) 0px 10px, rgb(0, 167, 235, 0.2) 0px 15px, rgb(0, 167, 235, 0.1) 0px 20px, rgb(0, 167, 235, 0.05) 0px 25px; */
+    background-color: #ffffff;
 }
     /* sliders servicio social */
     .trigger[type="radio"] {
@@ -223,6 +234,19 @@
         #tab3 .list-servicio {
             padding: 20px;
         }
+        #tab3 .list-servicio .lista .container-fila-lista {
+            margin-bottom: 0;
+            place-items: start;
+            display: block;
+        }
+        #tab3 .list-servicio .lista .container-fila-lista .item-lista-div {
+            max-width: 100%;
+            padding: 0 0 50px 0;
+        }
+        #tab3 .list-servicio .lista .container-fila-lista .item-lista-div .item-lista-li {
+            margin-top: 20px;
+            padding: 0 140px;
+        }
     }
  @media only screen and (max-width:768px){
     .container-social {
@@ -266,6 +290,24 @@
     .btn-hermanas:nth-of-type(4) {
         bottom: 35%;
         left: 93%;
+    }
+    #tab3 .text-frase-servicio h3 {
+        font-size: 26px;
+    }
+    #tab3 .text-frase-servicio {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    /* listas */
+    #tab3 .list-servicio {
+        margin: 0px 20px;
+    }
+    .servicio-3-casa{
+        width: 250px;
+        margin-left: -30px;
+    }
+    #tab3 .list-servicio .lista .container-fila-lista .item-lista-div .item-lista-li {
+        padding: 0 50px;
     }
 }
 @media only screen and (max-width: 450px) {

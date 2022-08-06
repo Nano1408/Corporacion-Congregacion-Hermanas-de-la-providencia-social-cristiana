@@ -1,0 +1,88 @@
+.hogares-jardines-header{
+    background-color: #2C8C2C;
+    padding: 55px 100px;
+    color: #fff;
+    margin-bottom: 50px;
+}
+.hogares-jardines-header h4{
+    font-size: 30px;
+    opacity: .7;
+}
+.hogares-jardines-header h2{
+    font-size: 60px;
+}
+/* LISTA DE HOGARES */
+.container-hogares-jardin{
+    width: 100%;
+    font-family: "Roboto", Helvetica, sans-serif;
+}
+.hogares-jardines{
+    margin: 0 auto;
+}
+.hogares-jardines .jardin-text-img{
+    display: flex;
+    width: 100%;
+    padding: 0 100px 100px 100px;
+    justify-content: center;
+}
+.hogares-jardines .jardin-text-img .jardin-texto{
+    padding-left: 40px;
+}
+.hogares-jardines .jardin-text-img .jardin-texto img{
+    width: 100%;
+    height: auto;
+}
+.hogares-jardines .jardin-text-img .jardin-texto h3{
+    color: #2C8C2C;
+    font-size: 24px;
+}
+.hogares-jardines .jardin-text-img .jardin-texto p{
+    width: 550px;
+    font-size: 18px;
+    text-align: justify;
+}
+@media screen and (max-width:990px) {
+    .hogares-jardines .jardin-text-img .jardin-texto p {
+        width: 350px;
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:800px) {
+    .hogares-jardines .jardin-text-img .jardin-texto p {
+        width: 201px;
+        font-size: 15px;
+    }
+    .hogares-jardines-header h4 {
+        font-size: 28px;
+    }
+    .hogares-jardines-header h2 {
+        font-size: 50px;
+    }
+}
+@media screen and (max-width:768px) {
+    .hogares-jardines-header {
+        padding: 10px 0px 10px 40px;
+    }
+    .hogares-jardines-header h4 {
+        font-size: 23px;
+    }
+    .hogares-jardines-header h2 {
+        font-size: 40px;
+    }
+    .hogares-jardines .jardin-text-img {
+        display: block;
+        width: 100%;
+        padding: 0 50px 100px 50px;
+        text-align: center;
+    }
+    .hogares-jardines .jardin-text-img .jardin-texto {
+        padding-left: 0px;
+    }
+    .hogares-jardines .jardin-text-img .jardin-texto p {
+        width: auto;
+        font-size: 15px;
+    }
+    .hogares-jardines .jardin-text-img .img-jardin img{
+        width: 100%;
+    }
+}

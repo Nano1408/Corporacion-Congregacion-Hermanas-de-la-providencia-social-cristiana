@@ -3,6 +3,10 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+body{
+	background-color: #F5F5F5;
+	width: 100%;
+}
 .wrap{
 	width: 100%;
 }
@@ -44,21 +48,6 @@
 	width: 20px;
 	height: 0px;
 }
-@media screen and (max-width: 768px) {
-	.contenido2 {
-		margin-top: 110px;
-	}
-	.carousel-item img{
-		height:auto;
-	}
-}
-@media screen and (min-width: 1300px) {
-	.carousel-item img{
-		height: 600px;
-		object-fit: cover;
-	}
-}
-
 .donacion{
 	display: flex;
 	width: 100%;
@@ -70,8 +59,11 @@
 	padding-right: 48px;
 }
 .donacion .block-plan-padrino .boton-donacion{
-	display: flex;
-	margin-top: 80px;
+	display: block;
+	width: 50%;
+	margin-left: 25%;
+	margin-top: 40px;
+	text-align: center;
 }
 /* img donacion */
 .donacion .img-donar img{
@@ -119,10 +111,6 @@
 	transition: .3s;
 	box-shadow: 1px 1px 20px 0px #000;
 }
-.donacion .block-plan-padrino .boton-donacion .davivienda{
-	padding-left: 10px;
-	text-align: center;
-}
 .donacion .boton-donacion .davivienda .p-textdonacion{
 	font-size: 20px;
 	font-weight: 400;
@@ -159,84 +147,6 @@
 	width: 140px;
 	height: 130px;
 	transform: scale(1.5);
-}
-@media screen and (max-width: 1400px) {
-	.donacion .block-plan-padrino .boton-donacion{
-		display: block;
-	}
-	.donacion .boton-donacion .form-contact .form-lista {
-		list-style: none;
-	}
-	.donacion .block-plan-padrino .boton-donacion .davivienda{
-		padding: 0;
-		margin-top: 40px;
-	}
-	.donacion .boton-donacion .davivienda .img-btn-transferir img {
-		margin: -15px 0px;
-		width: 100px;
-		height: 90px;
-		transform: scale(1.3);
-	}
-	.donacion .boton-donacion .davivienda .p-textdonacion {
-		margin-bottom: 10px;
-	}
-}
-@media screen and (max-width:900px) {
-	.donacion {
-		width: 100%;
-		padding: 40px 25px;
-	}
-	.donacion .block-plan-padrino .boton-donacion .davivienda{
-		margin-top: 20px;
-	}
-	.donacion .block-plan-padrino {
-		padding-right: 0;
-	}
-.donacion .img-donar img{
-	display: none;
-	}
-.donacion .boton-donacion .form-contact .form-lista {
-		list-style: none;
-		padding: 0;
-	}
-}
-@media screen and (max-width:768px) {
-	.donacion .boton-donacion .davivienda .img-btn-transferir img {
-		width: 100px;
-		height: 90px;
-		transform: scale(1.3);
-	}
-	.donacion .boton-donacion .davivienda .img-btn-transferir {
-		padding: 0px 35px;
-	}
-	.title-hermanas h1 {
-		padding-top: 20px;
-		font-size: 20px;
-	}
-	.frase-motivadora p {
-		font-size: 23px;
-	}
-}
-@media screen and (max-width: 370px) {
-.donacion .block-plan-padrino {
-	display: block;
-	margin-right: 0;
-	}
-.donacion .boton-donacion .davivienda p {
-	padding: 0;
-	}
-	.title-hermanas h1 {
-		padding-top: 10px;
-		font-size: 18px;
-	}
-	.frase-motivadora p {
-		font-size: 18px;
-	}
-}
-@media screen and (max-width:400px){
-	.title-hermanas h1 {
-		margin-top: 0px;
-	}
 }
 /* noticias */
 .frase {
@@ -314,7 +224,29 @@
 .noticias .parrafo-formacion {
 	color: white;
 }
-
+@media screen and (max-width: 1400px) {
+	.donacion .boton-donacion .form-contact .form-lista {
+		list-style: none;
+	}
+	.donacion .boton-donacion .davivienda .img-btn-transferir img {
+		margin: -15px 0px;
+		width: 100px;
+		height: 90px;
+		transform: scale(1.3);
+	}
+}
+@media screen and (min-width: 1300px) {
+	.carousel-item img{
+		height: 600px;
+		object-fit: cover;
+	}
+}
+@media screen and (max-width:1040px) {
+	.donacion .block-plan-padrino .boton-donacion {
+		width: 100%;
+		margin-left: 0;
+	}
+}
 @media screen and (max-width: 920px) {
 	.noticias{
 		display: block;
@@ -357,6 +289,79 @@
 		margin-right: 0px;
 		object-fit: cover;
 	}
-	
-	
+}
+@media screen and (max-width:900px) {
+	.donacion {
+		width: 100%;
+		padding: 40px 25px;
+	}
+	.donacion .block-plan-padrino .boton-donacion {
+		width: 70%;
+		margin-left: 15%;
+	}
+	.donacion .block-plan-padrino {
+		padding-right: 0;
+	}
+.donacion .img-donar img{
+	display: none;
+	}
+.donacion .boton-donacion .form-contact .form-lista {
+		list-style: none;
+		padding: 0;
+	}
+}
+@media screen and (max-width:768px) {
+	/* slider inicio */
+	.contenido2 {
+		margin-top: 110px;
+	}
+	.carousel-item img{
+		height:auto;
+	}
+	/* donacion botones */
+	.donacion .boton-donacion .davivienda .img-btn-transferir img {
+		width: 100px;
+		height: 90px;
+		transform: scale(1.3);
+	}
+	.donacion .boton-donacion .davivienda .img-btn-transferir {
+		padding: 0px 35px;
+	}
+	.donacion .boton-donacion .davivienda .p-textdonacion {
+		font-size: 17px;
+	}
+	.donacion .boton-donacion .davivienda .N-cuenta2 {
+		font-size: 16px;
+	}
+	.donacion .boton-donacion .davivienda .numero-cuenta {
+		font-size: 16px;
+	}
+	.title-hermanas h1 {
+		padding-top: 20px;
+		font-size: 20px;
+	}
+	.frase-motivadora p {
+		font-size: 23px;
+	}
+}
+@media screen and (max-width:400px){
+	.title-hermanas h1 {
+		margin-top: 0px;
+	}
+}
+@media screen and (max-width: 370px) {
+.donacion .block-plan-padrino {
+	display: block;
+	margin-right: 0;
+	}
+.donacion .boton-donacion .davivienda p {
+	padding: 0;
+	}
+	.title-hermanas h1 {
+		padding-top: 10px;
+		font-size: 18px;
+	}
+	.frase-motivadora p {
+		font-size: 18px;
+	}
 }
