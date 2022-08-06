@@ -1,8 +1,11 @@
 #tab5{
-    background-image: url("/assets/img/background-hermanas-contacto.jpg");
+    background-image: linear-gradient(#ffffff4a, #ffffff4a), url("/assets/img/background-hermanas-contacto.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
+}
+.title-form{
+    margin-top: -20px;
 }
 .container-form{
     display: flex;
@@ -176,6 +179,12 @@
     }
 }
 @media screen and (max-width:400px) {
+    .title-form {
+        margin-top: -40px;
+    }
+    .carousel {
+        margin-top:-9px;
+    }
     .form-span{
         margin:0 5px 0 1px
     }

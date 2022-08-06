@@ -19,10 +19,8 @@ document.getElementById('form').addEventListener('submit', function(event) {
           position: 'center',
           icon: 'success',
           title: 'Gracias Por enviar tu mensaje',
-          text:'Dios te bendiga',
+          text:'"Esten siempre alegres, oren sin cersar, den gracias a Dios en toda situación, porque esta es su voluntad para ustedes en cristo jesus"',
           showConfirmButton:true,
-          ConfirmButtonText: "Salir",
-          ConfirmButtonColor:'#fff',
           footer:'<span class="color-alert-footer">Tu mensaje es importante para nosotros</span>',
           backdrop:'true',
           allowOutsideClick:'false',
@@ -31,8 +29,8 @@ document.getElementById('form').addEventListener('submit', function(event) {
           stopKeydownPropagation:'true',
           timerProgressBar:'<span class="color-alert-footer">true</span>',
           timer: 7000,
-        })
-    }, (err) => {
+        });
+    }, (_err) => {
       btn.value = 'Enviar Mensaje';
       Swal.fire({
         icon: 'error',

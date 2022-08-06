@@ -50,14 +50,12 @@
     max-width: 350px;
 }
 #tab3 .list-servicio .lista{
-    /* width: 100%; */
     text-align: center;
     padding-left: 0;
     list-style: none;
     font-family: "Roboto", Helvetica, sans-serif;
 }
 #tab3 .list-servicio .lista .container-fila-lista{
-    /* width: 100%; */
     margin-bottom: 100px;
     place-items: flex-end;
     display: flex;
@@ -70,6 +68,9 @@
     max-width: 450px;
     padding-right: 30px;
     padding-left: 30px;
+}
+#tab3 .list-servicio .lista .container-fila-lista img{
+    transition:.3s;
 }
 #tab3 .list-servicio .lista .container-fila-lista img:hover{
     transform: scale(1.06);
@@ -113,7 +114,7 @@
         z-index: 100;
         transition: left .5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
         display: flex;
-        /* animation: 30s slidy infinite; */
+        /* animation: 10s slidy infinite; */
     }
     .slide-hermana {
         width: 50%;

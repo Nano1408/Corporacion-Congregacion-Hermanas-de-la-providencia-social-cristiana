@@ -32,6 +32,22 @@
     width: 100%;
     height: auto;
 }
+/* efecto hover imagenes */
+.hogares-jardines .jardin-text-img .img-jardin{
+    overflow: hidden;
+    border-radius: 8px;
+    /* box-shadow: #2C8C2C66 -5px 5px, #2C8C2C4d -10px 10px, #2C8C2C33 -15px 15px, #2C8C2C1a -20px 20px, #2C8C2C0d -25px 25px; */
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.hogares-jardines .jardin-text-img .img-jardin img{
+    border-radius: 8px;
+    transition: .3s;
+    height: 100%;
+}
+.hogares-jardines .jardin-text-img .img-jardin:hover img{
+    transform:scale(1.1);
+    transition: .3s;
+}
 .hogares-jardines .jardin-text-img .jardin-texto h3{
     color: #2C8C2C;
     font-size: 24px;
@@ -76,6 +92,7 @@
         text-align: center;
     }
     .hogares-jardines .jardin-text-img .jardin-texto {
+        margin-top: 30px;
         padding-left: 0px;
     }
     .hogares-jardines .jardin-text-img .jardin-texto p {
