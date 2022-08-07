@@ -12,8 +12,7 @@ document.getElementById('form').addEventListener('submit', function(event) {
    emailjs.sendForm(serviceID, templateID, this).then(() => {
    //esta linea se ejecuta despues de enviar el form para despues limpiar el form y aparecer la alerta
    document.getElementById("form").reset();
-
-      btn.value = 'Enviar Mensaje';
+      btn.value = 'Send Email';
          //sweetAlert
           Swal.fire({
           position: 'center',
@@ -31,7 +30,7 @@ document.getElementById('form').addEventListener('submit', function(event) {
           timer: 7000,
         });
     }, (_err) => {
-      btn.value = 'Enviar Mensaje';
+      btn.value = 'Send Email';
       Swal.fire({
         icon: 'error',
         title: 'Oops...',
