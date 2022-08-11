@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', Helvetica, sans-serif;
+    /* border: 1px solid red; */
 }
 #form-donacion #corazon-voluntario{
     width: 100%;
@@ -152,15 +153,16 @@ div.container-form{
     padding-left: 0;
 }
 #donacion-form .donar-proyecto .checkbox-lista{
-    display: grid;
-    justify-content: space-evenly;
-    justify-items: center;
+    text-align: center;
 }
 #donacion-form .donar-proyecto .checkbox-lista input{
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
     margin-top: 10px;
+    margin-right: 30px;
 }
 #donacion-form .donar-proyecto .checkbox-lista label{
-    font-size: 10px;
+    vertical-align: super;
+    font-size: 15px;
+    margin-top: -10px;
 }
