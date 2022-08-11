@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fuentes de google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Montserrat:wght@600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/form-corazon-voluntario.css">
+    <title>Pon un granito de arena</title>
+</head>
+<body>
+    <main id="form-donacion">
+        <section id="corazon-voluntario">
+            <div class="logo-form-corazon">
+                <picture>
+                    <img src="./assets/icons/logo 890906439 - Casadel Peregrino.png" alt="logo-hermanas-peregrino">
+                </picture>
+            </div>
+            <div class="title-corazon">
+                <h1>un corazon voluntario</h1>
+            </div>
+            <div class="objetivo">
+                <div class="text">
+                    <h2>objetivo</h2>
+                    <p>Gestionar donaciones de bienes en especie que contribuyan al mejoramiento de las condiciones de vida de la comunidad hermanas de la Providencia social cristiana; ayudas a que nuestros niños puedan tener mayores oportunidades para salir adelante y cumplir con su propósito de vida, también aportas para que la alimentación, la educación, la formación en principios, valores, la recreación y el deporte en cada niño sea una herramienta para desarrollar sus talentos y soñar con nuevas oportunidades.</p>
+                </div>
+                <!-- lista de las donaciones -->
+                <div class="que-donar">
+                    <div class="title-que">
+                            <h2>que puedo donar?</h2>
+                        <ul class="list-que">
+                            <div>
+                              <img src="./assets/img/utilies-escolares-form.png" alt="utiles-escolares.png">
+                              <li class="list-donar">Utiles escolares</li>
+                            </div>
+                            <div>
+                                <img src="./assets/img/ropa-calzado-form.png" alt="utiles-escolares.png">
+                                <li class="list-donar">Ropa y calzado</li>
+                            </div>
+                            <div>
+                                <img src="./assets/img/utiles-aseo-form.png" alt="utiles-escolares.png">
+                                <li class="list-donar">Articulos de aseo</li>
+                            </div>
+                            <div>
+                                <img src="./assets/img/descanso-form.png" alt="utiles-escolares.png">
+                                <li class="list-donar">Dia de descanso para los niños</li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container-form">
+                <form action="" id="donacion-form">
+                    <div class="nombre-completo">
+                        <div class="name-last nombre">
+                            <label for="name" name="name">Nombre Completo*</label>
+                            <input type="text" name="name" id="name" placeholder="Escribe tu nombre completo...">
+                        </div>
+                        <div class="name-last">
+                            <label for="lastName" name="lastName">Apellido Completo*</label>
+                            <input type="text" name="lastName" id="lastName" placeholder="Escribe tu apellido completo...">
+                        </div>
+                    </div>
+                    <div class="container-datos">
+                        <!-- direccion -->
+                        <div class="datos-form direcption-form">
+                            <label for="direction" name="direction">Cual es tu direccion?*</label>
+                            <input type="text" name="direction" id="direction" placeholder="Escribe tu reccion completa...">
+                        </div>
+                        <!-- telefono -->
+                        <div class="datos-form telefono">
+                            <label for="phone" name="phone">Numero de Contacto*</label>
+                            <input type="tel" name="phone" id="phone" placeholder="Escribe tu numero de telefono...">
+                        </div>
+                        <!-- correo -->
+                        <div class="datos-form correo">
+                            <label for="emali" name="email">Correo Electronico*</label>
+                            <input type="email" name="email" id="email" placeholder="Escribe tu correo electronico...">
+                        </div>
+                        <!-- proyecto -->
+                        <div class="donar-proyecto">
+                            <label for="description">Donarás para un proyecto en específico? Cuál?</label>
+                            <div class="checkbox-lista">
+                                <label for="checkbox">Utiles Escolares</label>
+                                <input type="checkbox" name="checkbox" id="checkbox">
+                                <label for="checkbox">Ropa y Calzados</label>
+                                <input type="checkbox" name="checkbox" id="checkbox">
+                                <label for="checkbox">Articulos de aseo</label>
+                                <input type="checkbox" name="checkbox" id="checkbox">
+                                <label for="checkbox">Dia de Descanso para los Niños</label>
+                                <input type="checkbox" name="checkbox" id="checkbox">
+                                <label for="checkbox">Otro...</label>
+                                <input type="checkbox" name="checkbox" id="checkbox">
+                            </div>
+                        </div>
+                        <div class="enviar">
+                            <input type="submit" value="submit" placeholder="Enviar Datos">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
