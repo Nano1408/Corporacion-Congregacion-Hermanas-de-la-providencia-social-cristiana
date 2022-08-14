@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/icons/icon-page-donate.png" type="image/x-icon" sizes="64x64">
     <!-- fuentes de google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -59,28 +60,28 @@
                     <div class="nombre-completo">
                         <div class="name-last nombre">
                             <label for="name" name="name">Nombre Completo*</label>
-                            <input type="text" name="name" id="name" placeholder="Escribe tu nombre completo..." class="form-data">
+                            <input type="text" name="name" id="name" placeholder="Escribe tu nombre completo..." class="form-data" required>
                         </div>
                         <div class="name-last">
                             <label for="lastName" name="lastName">Apellido Completo*</label>
-                            <input type="text" name="lastName" id="lastName" placeholder="Escribe tu apellido completo..." class="form-data">
+                            <input type="text" name="lastName" id="lastName" placeholder="Escribe tu apellido completo..." class="form-data" required>
                         </div>
                     </div>
                     <div class="container-datos">
                         <!-- direccion -->
                         <div class="datos-form direcption-form">
                             <label for="direction" name="direction">Cual es tu direccion?*</label>
-                            <input type="text" name="direction" id="direction" placeholder="Escribe tu reccion completa..." class="form-data">
+                            <input type="text" name="direction" id="direction" placeholder="Escribe tu reccion completa..." class="form-data" required>
                         </div>
                         <!-- telefono -->
                         <div class="datos-form telefono">
                             <label for="phone" name="phone">Numero de Contacto*</label>
-                            <input type="tel" name="phone" id="phone" placeholder="Escribe tu numero de telefono..." class="form-data">
+                            <input type="number" name="phone" id="phone" placeholder="Escribe tu numero de telefono..." class="form-data" required>
                         </div>
                         <!-- correo -->
                         <div class="datos-form correo">
                             <label for="emali" name="email">Correo Electronico*</label>
-                            <input type="email" name="email" id="email" placeholder="Escribe tu correo electronico..." class="form-data">
+                            <input type="email" name="email" id="email" placeholder="Escribe tu correo electronico..." class="form-data" required>
                         </div>
                         <!-- proyecto -->
                         <div class="donar-proyecto">
@@ -89,35 +90,33 @@
                             <div class="container-chekbox">
                                 <div class="checkbox-lista">
                                     <label class="cont-label">Utiles Escolares
-                                        <input type="checkbox" name="checkbox" class="check-input">
+                                        <input type="checkbox" value="Utilies Escolares" id="checked" name="checkbox" class="check-input">
                                         <span></span>
                                       </label>
                                 </div>
                                 <div class="checkbox-lista">
                                     <label class="cont-label">Ropa y Calzado
-                                        <input type="checkbox" name="checkbox" class="check-input">
+                                        <input type="checkbox" value="Ropa y Calzado" id="checked" name="checkbox" class="check-input">
                                         <span></span>
                                       </label>
                                 </div>
                                 <div class="checkbox-lista">
                                     <label class="cont-label">Articulos de Aseo
-                                        <input type="checkbox" name="checkbox" class="check-input">
+                                        <input type="checkbox" value="Articulos de Aseo" id="checked" name="checkbox" class="check-input">
                                         <span></span>
                                       </label>
                                 </div>
                                 <div class="checkbox-lista">
                                     <label class="cont-label">Comida
-                                        <input type="checkbox" name="checkbox" class="check-input">
+                                        <input type="checkbox" value="Comida" id="checked" name="checkbox" class="check-input">
                                         <span></span>
                                       </label>
                                 </div>
-                                <div class="checkbox-lista">
-                                    <label class="cont-label">Otro...
-                                        <input type="checkbox" name="checkbox" class="check-input">
-                                        <span></span>
-                                      </label>
-                                </div>
-                            </div>   
+                            </div>  
+                            <div class="datos-form otro">
+                                <label for="otro" name="otro" class="label-otro">Otro...</label>
+                                    <input type="text" name="otro" class="form-data" placeholder="Que otros articulos quieres donar?">
+                            </div> 
                         </div>
                         <div class="enviar">
                             <input type="submit" value="Enviar Datos" id="button">

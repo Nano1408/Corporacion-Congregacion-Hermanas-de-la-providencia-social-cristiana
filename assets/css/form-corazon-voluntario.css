@@ -8,10 +8,10 @@
 #form-donacion #corazon-voluntario{
     width: 100%;
     height: 1000%;
-    background-image: linear-gradient(#0000004a, #0000004a), url(/assets/img/un-corazon-voluntario.jpeg);
+    background-image: linear-gradient(#00000062, #00000062), url(/assets/img/un-corazon-voluntario.jpeg);
     background-repeat: no-repeat;
-    background-size:contain;
-    box-shadow: 0px 0px 20px 5px #fff;
+    background-position:center center;
+    background-size:cover;
 }
 #corazon-voluntario > .logo-form-corazon{
     padding-top: 15px;
@@ -123,12 +123,13 @@ div.container-form{
 }
 #form .form-data{
     background-color: transparent;
-    color: #100720;
+    color: #293462;
     border: solid 2px #000;
     border-radius: 10px;
     padding-left: 20px;
     width: 100%;
     height: 60px;
+    font-size: 20px;
 }
 #form .form-data::placeholder{
     opacity: .7;
@@ -136,7 +137,9 @@ div.container-form{
 }
 #form .form-data:focus{
     border: none;
-    background: #0F85B5;
+    color: #fff;
+    font-size: 25px;
+    background: #0f86b597;
     outline: 3px solid #0F85B5;
 }
 #form .form-data:focus::placeholder{
@@ -183,6 +186,22 @@ div.container-form{
 }
 #form .datos-form{
     margin-top: 100px;
+}
+/* input de otro... */
+#form .donar-proyecto .otro{
+    width: 70%;
+    margin-left: 10%;
+    display:flex;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+#form .donar-proyecto .otro input::placeholder{
+    font-size: 15px;
+    padding-right: 15px;
+}
+#form .donar-proyecto .otro .label-otro{
+    margin-top: 35px;
+    padding-right: 10px;
 }
 /* boton submit */
 #form .container-datos .enviar{
@@ -323,4 +342,9 @@ div.container-form{
         width: 95%;
         margin-left: 2%;
     }
+    /* input de otro... */
+#form .donar-proyecto .otro{
+    width: 100%;
+    margin-left: 0;
+}
 }
