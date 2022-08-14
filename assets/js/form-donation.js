@@ -4,7 +4,7 @@ const btn = document.getElementById('button');
 document.getElementById('form').addEventListener('submit', function(event) {
    event.preventDefault();
 
-   btn.value = 'Enviando Espere...';
+   btn.value = 'Enviando Datos...';
 
    const serviceID = 'default_service';
    const templateID = 'template_a7q2a7m';
