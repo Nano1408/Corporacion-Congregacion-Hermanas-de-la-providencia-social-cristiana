@@ -53,33 +53,34 @@
                     </div>
                 </div>
             </div>
+            <!-- form container -->
             <div class="container-form">
-                <form action="" id="donacion-form">
+                <form action="" id="form">
                     <div class="nombre-completo">
                         <div class="name-last nombre">
                             <label for="name" name="name">Nombre Completo*</label>
-                            <input type="text" name="name" id="name" placeholder="Escribe tu nombre completo...">
+                            <input type="text" name="name" id="name" placeholder="Escribe tu nombre completo..." class="form-data">
                         </div>
                         <div class="name-last">
                             <label for="lastName" name="lastName">Apellido Completo*</label>
-                            <input type="text" name="lastName" id="lastName" placeholder="Escribe tu apellido completo...">
+                            <input type="text" name="lastName" id="lastName" placeholder="Escribe tu apellido completo..." class="form-data">
                         </div>
                     </div>
                     <div class="container-datos">
                         <!-- direccion -->
                         <div class="datos-form direcption-form">
                             <label for="direction" name="direction">Cual es tu direccion?*</label>
-                            <input type="text" name="direction" id="direction" placeholder="Escribe tu reccion completa...">
+                            <input type="text" name="direction" id="direction" placeholder="Escribe tu reccion completa..." class="form-data">
                         </div>
                         <!-- telefono -->
                         <div class="datos-form telefono">
                             <label for="phone" name="phone">Numero de Contacto*</label>
-                            <input type="tel" name="phone" id="phone" placeholder="Escribe tu numero de telefono...">
+                            <input type="tel" name="phone" id="phone" placeholder="Escribe tu numero de telefono..." class="form-data">
                         </div>
                         <!-- correo -->
                         <div class="datos-form correo">
                             <label for="emali" name="email">Correo Electronico*</label>
-                            <input type="email" name="email" id="email" placeholder="Escribe tu correo electronico...">
+                            <input type="email" name="email" id="email" placeholder="Escribe tu correo electronico..." class="form-data">
                         </div>
                         <!-- proyecto -->
                         <div class="donar-proyecto">
@@ -87,34 +88,55 @@
                             <!-- contenedor de los checkbox -->
                             <div class="container-chekbox">
                                 <div class="checkbox-lista">
-                                    <label for="checkbox">Utiles Escolares</label>
-                                    <input type="checkbox" name="checkbox" id="checkbox" class="area">
+                                    <label class="cont-label">Utiles Escolares
+                                        <input type="checkbox" name="checkbox" class="check-input">
+                                        <span></span>
+                                      </label>
                                 </div>
                                 <div class="checkbox-lista">
-                                    <label for="checkbox">Ropa y Calzados</label>
-                                    <input type="checkbox" name="checkbox" id="checkbox" class="area">
+                                    <label class="cont-label">Ropa y Calzado
+                                        <input type="checkbox" name="checkbox" class="check-input">
+                                        <span></span>
+                                      </label>
                                 </div>
                                 <div class="checkbox-lista">
-                                    <label for="checkbox">Articulos de aseo</label>
-                                    <input type="checkbox" name="checkbox" id="checkbox" class="area">
+                                    <label class="cont-label">Articulos de Aseo
+                                        <input type="checkbox" name="checkbox" class="check-input">
+                                        <span></span>
+                                      </label>
                                 </div>
                                 <div class="checkbox-lista">
-                                    <label for="checkbox">Comida</label>
-                                    <input type="checkbox" name="checkbox" id="checkbox" class="area-2">
+                                    <label class="cont-label">Comida
+                                        <input type="checkbox" name="checkbox" class="check-input">
+                                        <span></span>
+                                      </label>
                                 </div>
                                 <div class="checkbox-lista">
-                                    <label for="checkbox">Otro...</label>
-                                    <input type="checkbox" name="checkbox" id="checkbox" class="area-2">
+                                    <label class="cont-label">Otro...
+                                        <input type="checkbox" name="checkbox" class="check-input">
+                                        <span></span>
+                                      </label>
                                 </div>
                             </div>   
                         </div>
                         <div class="enviar">
-                            <input type="submit" value="submit" placeholder="Enviar Datos">
+                            <input type="submit" value="Enviar Datos" id="button">
                         </div>
                     </div>
                 </form>
             </div>
         </section>
     </main>
+    <!-- funcion js form -->
+    <script src="./assets/js/form-donation.js"></script>
+    <!-- escript API EmailJS -->
+    <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <!-- ESCRIPT ID CONECTION -->
+<script type="text/javascript">
+  emailjs.init('TwAVGVUwAQPNV6LG-')
+</script>
+<!-- sweetAlert api-->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.23/dist/sweetalert2.all.min.js"></script>
 </body>
 </html>
