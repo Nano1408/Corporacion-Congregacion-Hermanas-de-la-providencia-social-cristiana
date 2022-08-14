@@ -13,25 +13,28 @@
     background-size:cover;
 }
 #corazon-voluntario > .logo-form-corazon{
-    padding-top: 30px;
+    padding-top: 15px;
     width: 100%;
     text-align: center;
 }
 #corazon-voluntario > .logo-form-corazon picture img{
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     transition: .3s;
 }
 #corazon-voluntario > .logo-form-corazon picture img:hover{
     transform: scale(1.05);
     transition: .3s;
+    -webkit-filter: drop-shadow(5px 5px 5px #22222288);
+    filter: drop-shadow(0px 0px 25px #22222288);
 }
 .title-corazon h1{
+    margin-top: 10px;
     text-align: center;
     text-transform: uppercase;
     text-shadow: 3px 3px 4px #000;
     color: #fff;
-    font-size: 64px;
+    font-size: 50px;
 }
 .objetivo{
     width: 100%;
@@ -45,12 +48,12 @@
     margin-left: 15%;
 }
 .objetivo .text h2{
-    font-size:50px;
+    font-size:40px;
     text-transform:capitalize;
 }
 .objetivo .text p{
     text-align: justify;
-    font-size:30px;
+    font-size:23px;
 }
 /* lista de las donaciones */
 .objetivo .que-donar{
@@ -62,21 +65,32 @@
     text-align: center;
 }
 .objetivo .que-donar .title-que h2{
-    font-size: 50px;
+    font-size: 40px;
 }
 .objetivo .que-donar .title-que .list-que{
     width: 100%;
     justify-content: space-between;
     padding: 20px 80px;
-    font-size: 23px;
+    font-size: 25px;
     list-style: none;
     display: flex;
 }
+.objetivo .que-donar .title-que .list-que .img-lista-donar{
+    padding-right: 15px;
+}  
 .objetivo .que-donar .title-que .list-que div img{
     width: 100px;
     height: 100px;
     border-radius: 20px;
-    background:linear-gradient(to right top, #05193799, #004d7a99, #00879399, #00bf7299, #a8eb1299);
+    padding: 5px;
+    /* background:linear-gradient(to right top, #05193799, #004d7a99, #00879399, #00bf7299, #a8eb1299); */
+    background: linear-gradient(90deg, rgba(44,140,44,1) 35%, rgba(0,191,255,1) 100%);
+    box-shadow: rgb(38 57 77) 0px 20px 30px -10px;
+    transition: .3s;
+}
+.objetivo .que-donar .title-que .list-que div img:hover{
+    transform: scale(1.07);
+    transition: .3s;
 }
 /* #################################################################################################################
 ############## formulario estilos ################################################################################## */
@@ -152,8 +166,17 @@ div.container-form{
     height: 40px;
     padding-left: 0;
 }
-#donacion-form .donar-proyecto .checkbox-lista{
-    text-align: center;
+#donacion-form .donar-proyecto .container-chekbox{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: max-content;
+    /* grid-template-columns: repeat(3,1fr); */
+}
+#donacion-form .donar-proyecto .container-chekbox .checkbox-lista{
+    padding-bottom: 15px;
 }
 #donacion-form .donar-proyecto .checkbox-lista input{
     width: 24px;
@@ -165,4 +188,42 @@ div.container-form{
     vertical-align: super;
     font-size: 15px;
     margin-top: -10px;
+}
+/* #################################################################
+############## QUERY RESPONSIVE FORM ###############################*/
+@media screen and (max-width:900px) {
+    .objetivo .que-donar .title-que .list-que{
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+        grid-template-rows: repeat(2,auto);
+    }  
+    .objetivo .que-donar .title-que .list-que .img-2{
+        padding-top: 50px;
+    } 
+      /*form */
+      #donacion-form {
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+@media screen and (max-width:650px){
+    .title-corazon h1{
+        font-size: 2.5em;
+    }
+}
+@media screen and (max-width:550px) {
+    .objetivo .que-donar .title-que .list-que{
+        display: grid;
+        grid-template-columns: repeat(1,100%);
+        grid-template-rows: repeat(1,auto);
+    }  
+    .objetivo .que-donar .title-que .list-que .img-lista-donar{
+        padding-top: 30px;
+        padding-right: 0;
+    }  
+     /*form  */
+     #donacion-form {
+        width: 95%;
+        margin-left: 2%;
+    }
 }
