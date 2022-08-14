@@ -328,6 +328,41 @@ div.container-form{
     }
 }
 @media screen and (max-width:550px) {
+    #form .form-data::placeholder{
+        font-size: 14px;
+        padding-right: 5px;
+    }
+    #form .donar-proyecto .otro input::placeholder{
+        font-size: 14px;
+        padding-right: 5px;
+    }
+    #form .nombre-completo {
+        display: block;
+        justify-content: center;
+    }
+    #form .nombre-completo {
+        padding: 0px 15px;
+    }
+    #form .nombre-completo .nombre {
+        padding-right: 0px;
+    }
+    #form .form-data {
+        padding-left: 5px;
+        font-size: 15px;
+    }
+    #form .form-data:focus{
+        border: none;
+        color: #fff;
+        font-size: 17px;
+        background: #0f86b597;
+        outline: 3px solid #0F85B5;
+    }
+    #form .datos-form {
+        margin-top: 20px;
+    }
+    #form .nombre-completo .name-last{
+        margin-top: 20px;
+    }
     .objetivo .que-donar .title-que .list-que{
         display: grid;
         grid-template-columns: repeat(1,100%);
