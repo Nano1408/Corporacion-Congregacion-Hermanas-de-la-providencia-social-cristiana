@@ -178,6 +178,7 @@ div.container-form{
 #form .nombre-completo .nombre{
     padding-right: 60px;
 }
+/* display de los checkbox */
 #form .nombre-completo .name-last{
     display: grid;
     width: 100%;
@@ -188,6 +189,12 @@ div.container-form{
     margin-top: 100px;
 }
 /* input de otro... */
+#form .donar-proyecto .description{
+    margin-top: 30px;
+    color: #000000d9;
+    opacity: .7;
+    font-size: 25px;
+}
 #form .donar-proyecto .otro{
     width: 70%;
     margin-left: 10%;
