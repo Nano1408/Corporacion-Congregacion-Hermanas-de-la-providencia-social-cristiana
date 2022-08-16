@@ -73,10 +73,9 @@ body{
 .donacion .title-plan-padrino .text-padrino{
 	font-size: 36px;
 	font-weight: 500;
-}
-.donacion hr{
-	border: solid 3px #0F85B5;
+	padding: 5px 10px;
 	margin-bottom: 24px;
+	border-bottom: solid 3px #0F85B5;
 }
 .donacion .title-plan-padrino p{
 	font-size: 20px;
