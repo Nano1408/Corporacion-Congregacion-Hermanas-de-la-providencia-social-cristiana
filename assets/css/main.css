@@ -93,6 +93,7 @@ body{
 }
 .donacion .boton-donacion .form-contact{
 	text-align: center;
+	margin-top: 100px;
 }
 .donacion .boton-donacion .form-contact .boton-form button{
 	border: none;
@@ -256,7 +257,7 @@ body{
 @media screen and (max-width:1040px) {
 	.donacion .block-plan-padrino .boton-donacion {
 		width: 100%;
-		margin-left: 0;
+		margin-left: 70%;
 	}
 }
 @media screen and (max-width:980px) {
